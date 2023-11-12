@@ -1,5 +1,5 @@
 # Javascript Interview Preparation
- [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview/edit/main/README.md#hoisting)
+ [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
