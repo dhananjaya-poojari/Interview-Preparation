@@ -1,5 +1,6 @@
 # Javascript Interview Preparation
  [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)
+ [Difference between null, undefined and not defined] ()
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
@@ -23,3 +24,20 @@ The variable getName is accessible even before its declaration due to hoisting, 
 
 > Doc: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting <br />
 > Vid: https://youtu.be/Fnlnw8uY6jo?feature=shared <br />
+
+## Difference between null, undefined and not defined
+### Null
+ It is an assignment value which indicates that variable points to no object.
+```
+const foo = null;
+foo; //null
+console.log(typeof(null)) // object
+```
+### undefined 
+Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/f72e9e6a-fab9-44e5-b95f-f52041298510)
+
+### not defined
+A not defined is a variable which is not declared at a given point of time with declaration keyword like var, let or const.
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/882e0803-7170-4e45-995e-9ce5d3ebadbe)
+
