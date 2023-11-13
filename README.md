@@ -1,7 +1,7 @@
 # Javascript Interview Preparation
- [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
- [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)
- [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
+ 1. [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
+ 1. [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
+ 1. [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)<br />
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
@@ -41,7 +41,7 @@ const foo = null;
 foo; //null
 console.log(typeof(null)) // object
 ```
-**undefined **
+**undefined**
 Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/f72e9e6a-fab9-44e5-b95f-f52041298510)
 
