@@ -1,7 +1,7 @@
 # Javascript Interview Preparation
  [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
  [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)
- [Scope and Scope chain]()
+ [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
