@@ -49,3 +49,8 @@ Whenever we declare a variable without assigning any value to it, javascript imp
 A not defined is a variable which is not declared at a given point of time with declaration keyword like var, let or const.
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/882e0803-7170-4e45-995e-9ce5d3ebadbe)
 
+## Lexical Enviroment
+A lexical environment is also known as a scope, which determines the accessibility of variables and functions.
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/78676c4f-11f3-4760-8bb7-fb72bab62b4e)
+
+
