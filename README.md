@@ -53,4 +53,13 @@ A not defined is a variable which is not declared at a given point of time with 
 A lexical environment is also known as a scope, which determines the accessibility of variables and functions.
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/78676c4f-11f3-4760-8bb7-fb72bab62b4e)
 
-
+## Variable Shadowing
+Variable shadowing in JavaScript is a mechanism where a variable declared in an inner scope has the same name as a variable in an outer scope. When this happens, the inner variable hides the outer variable.
+```
+var a=100;
+{
+  var a=10;
+}
+console.log(a);
+// Prints 10
+```
