@@ -61,14 +61,18 @@ Variable shadowing in JavaScript is a mechanism where a variable declared in an 
 ```
 var a=100;
 const b=200;
+
 {
   var a=10;
   const b=20;
+
   console.log(b)
 // Prints 20
 }
+
 console.log(a);
 // Prints 10
+
 console.log(b)
 // Prints 200
 ```
@@ -88,4 +92,31 @@ myFunc();
 
 ```
 In the above example we can access variable of makeFunc using the inner function exposure
+```
+function func() {
+  for (let j = 0; j < 5; j++) {
+    setTimeout(() => {
+      console.log(j);
+      // Prints 0 1 2 3 4 
+    }, 1);
+  }
+  for (var i = 0; i < 5; i++) {
+    setTimeout(() => {
+      console.log(i);
+      // Prints 5 5 5 5 
+    }, 1);
+  }
+
+  while (j < 10) {
+    let k=j;
+    setTimeout(() => {
+      console.log(k);
+      // Prints 5 6 7 8 9 
+    }, 1);
+   j++;
+  }
+}
+
+func();
+```
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
