@@ -2,6 +2,9 @@
  1. [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
  1. [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
  1. [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)<br />
+ 1. [Lexical Enviroment](https://github.com/dhananjaya-poojari/Javascript-Interview#lexical-enviroment)<br />
+ 1. [Variable Shadowing](https://github.com/dhananjaya-poojari/Javascript-Interview#variable-shadowing) <br />
+ 1. [Closures](https://github.com/dhananjaya-poojari/Javascript-Interview#Closures)
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
@@ -57,9 +60,32 @@ A lexical environment is also known as a scope, which determines the accessibili
 Variable shadowing in JavaScript is a mechanism where a variable declared in an inner scope has the same name as a variable in an outer scope. When this happens, the inner variable hides the outer variable.
 ```
 var a=100;
+const b=200;
 {
   var a=10;
+  const b=20;
+  console.log(b)
+// Prints 20
 }
 console.log(a);
 // Prints 10
+console.log(b)
+// Prints 200
 ```
+## Closures
+A closure happens when a function keeps a connection to the information around it. It's like a bundle where a function and its environment (the stuff it knows about) are tied together. So, in simple terms, a closure lets an inside function reach out and use the details from an outside function.
+```
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+```
+In the above example we can access variable of makeFunc using the inner function exposure
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
