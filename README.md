@@ -5,6 +5,9 @@
  1. [Lexical Enviroment](https://github.com/dhananjaya-poojari/Javascript-Interview#lexical-enviroment)<br />
  1. [Variable Shadowing](https://github.com/dhananjaya-poojari/Javascript-Interview#variable-shadowing) <br />
  1. [Closures](https://github.com/dhananjaya-poojari/Javascript-Interview#Closures)
+ 2. [Class and Constructor](https://github.com/dhananjaya-poojari/Javascript-Interview#Class-and-Constructor)
+ 3. [Garbage Collector](https://github.com/dhananjaya-poojari/Javascript-Interview#Garbage-Collector)
+
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
 
@@ -120,3 +123,29 @@ function func() {
 func();
 ```
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+## Class and Constructor
+```
+function Counter() {
+  let j = 0;
+  this.increment = () => {
+    j++;
+  };
+  this.decrement = () => {
+    j--;
+  };
+  this.peek = () => {
+    console.log(j);
+  };
+}
+
+const counter1 = new Counter();
+counter1.increment();
+counter1.peek();
+```
+When a function is associated with the this keyword, it should be invoked using the new keyword to access the properties or functions attached to it.
+
+## Garbage Collector
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/d18e2ffa-7174-44c1-ad5e-e6c59c0cd80c) <br />
+In the provided example, j remains accessible within the closure or block scope, while z is removed. The JavaScript engine, employing its garbage collection mechanism, determines which variables to retain in memory and which to discard.
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management#garbage_collection
