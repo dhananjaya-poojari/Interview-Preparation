@@ -1,12 +1,22 @@
 # Javascript Interview Preparation
- 1. [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
- 1. [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
- 1. [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)<br />
- 1. [Lexical Enviroment](https://github.com/dhananjaya-poojari/Javascript-Interview#lexical-enviroment)<br />
- 1. [Variable Shadowing](https://github.com/dhananjaya-poojari/Javascript-Interview#variable-shadowing) <br />
- 1. [Closures](https://github.com/dhananjaya-poojari/Javascript-Interview#Closures)
- 2. [Class and Constructor](https://github.com/dhananjaya-poojari/Javascript-Interview#Class-and-Constructor)
- 3. [Garbage Collector](https://github.com/dhananjaya-poojari/Javascript-Interview#Garbage-Collector)
+
+<details>
+<summary>Basic Concepts</summary>
+ 
+1. [Difference between null, undefined and not defined](https://github.com/dhananjaya-poojari/Javascript-Interview#difference-between-null-undefined-and-not-defined)<br />
+1. [Class and Constructor](https://github.com/dhananjaya-poojari/Javascript-Interview#Class-and-Constructor)    
+</details>
+
+<details>
+<summary>Core Concepts</summary>
+ 
+1. [Hoisting](https://github.com/dhananjaya-poojari/Javascript-Interview#hoisting)<br />
+1. [Scope and Scope chain](https://github.com/dhananjaya-poojari/Javascript-Interview#scope-and-scope-chain)
+1. [Lexical Enviroment](https://github.com/dhananjaya-poojari/Javascript-Interview#lexical-enviroment)<br />
+1. [Variable Shadowing](https://github.com/dhananjaya-poojari/Javascript-Interview#variable-shadowing) <br />
+1. [Closures](https://github.com/dhananjaya-poojari/Javascript-Interview#Closures)
+3. [Garbage Collector](https://github.com/dhananjaya-poojari/Javascript-Interview#Garbage-Collector)       
+</details>
 
 ## Hoisting
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is actually executed. This means that you can use a variable or a function in your code even before it's declared.
@@ -147,5 +157,5 @@ When a function is associated with the this keyword, it should be invoked using 
 
 ## Garbage Collector
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/d18e2ffa-7174-44c1-ad5e-e6c59c0cd80c) <br />
-In the provided example, j remains accessible within the closure or block scope, while z is removed. The JavaScript engine, employing its garbage collection mechanism, determines which variables to retain in memory and which to discard.
+In the provided example, `j` remains accessible within the closure or block scope, while `z` is removed. The JavaScript engine, employing its garbage collection mechanism, determines which variables to retain in memory and which to discard.
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management#garbage_collection
