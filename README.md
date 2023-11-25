@@ -184,7 +184,14 @@ const a = function () {
    //...
 });
 ```
-if you don’t place the anonymous function inside the (), you’ll get a syntax error. The () makes the anonymous function an expression that returns a function object.
+If you don’t place the anonymous function inside the `()`, you’ll get a syntax error. The `()` makes the anonymous function an expression that returns a function object.
+An anonymous function is not accessible after its initial creation. Therefore, you often need to assign it to a variable.
+```
+let show = function() {
+    //...
+};
+```
+the anonymous function has no name between the `function` keyword and parentheses `()`
 ####  Named Function Expression
 ```
 const b = function xx() {
@@ -202,3 +209,4 @@ const c = () => {
 console.log(c);
 ```
 This means that functions can be assigned to variables, passed as arguments to other functions,and returned from functions.
+> https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
