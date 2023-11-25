@@ -17,7 +17,8 @@
 1. [Lexical Enviroment](#lexical-enviroment)<br />
 1. [Variable Shadowing](#variable-shadowing) <br />
 1. [Closures](#closures)
-1. [Garbage Collector](#garbage-collector)       
+1. [Garbage Collector](#garbage-collector) <br />
+1. [Callback Function](#callback-function)
 </details>
 
 ### Hoisting
@@ -210,3 +211,13 @@ console.log(c);
 ```
 This means that functions can be assigned to variables, passed as arguments to other functions,and returned from functions.
 > https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
+
+### Callback Function
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+```
+setTimeout(function xx() {
+  //....
+}, 1);
+```
+In the provided function, a callback function `xx` is passed as an argument, and it is set to be executed after a delay of 1 second.
+>https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
