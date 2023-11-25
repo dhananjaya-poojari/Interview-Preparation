@@ -170,7 +170,7 @@ function a() {
   //...
 }
 ```
-A function declaration also known as a function statement declares a function with a function keyword.
+A function declaration also known as a function statement declares a function with a `function` keyword.
 #### Function Expression
 ```
 const a = function () {
