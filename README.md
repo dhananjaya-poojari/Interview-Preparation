@@ -5,7 +5,8 @@
 <summary>Basic Concepts</summary>
  
 1. [Difference between null, undefined and not defined](#difference-between-null-undefined-and-not-defined)<br />
-1. [Class and Constructor](#class-and-constructor)    
+1. [Class and Constructor](#class-and-constructor)    <br />
+1. [Types of Function](#types-of-function)
 </details>
 
 <details>
@@ -160,3 +161,44 @@ When a function is associated with the this keyword, it should be invoked using 
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/d18e2ffa-7174-44c1-ad5e-e6c59c0cd80c) <br />
 In the provided example, `j` remains accessible within the closure or block scope, while `z` is removed. The JavaScript engine, employing its garbage collection mechanism, determines which variables to retain in memory and which to discard.
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management#garbage_collection
+
+### Types of Function
+
+#### Function statement or Function Declaration
+```
+function a() {
+  //...
+}
+```
+A function declaration also known as a function statement declares a function with a function keyword.
+#### Function Expression
+```
+const a = function () {
+  //...
+};
+
+```
+#### Anonymous Function
+```
+(function () {
+   //...
+});
+```
+if you don’t place the anonymous function inside the (), you’ll get a syntax error. The () makes the anonymous function an expression that returns a function object.
+####  Named Function Expression
+```
+const b = function xx() {
+  //...
+  // Here you can access xx function but not outside
+};
+// Here you can't access xx
+```
+Outside the function can't access
+#### First Class Function
+```
+const c = () => {
+  return function(){}
+};
+console.log(c);
+```
+This means that functions can be assigned to variables, passed as arguments to other functions,and returned from functions.
