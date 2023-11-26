@@ -221,3 +221,7 @@ setTimeout(function xx() {
 ```
 In the provided function, a callback function `xx` is passed as an argument, and it is set to be executed after a delay of 1 second.
 >https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+
+### Web API's
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/22aaf5b6-5d64-4879-81b0-1b2a438c238c)
+>https://developer.mozilla.org/en-US/docs/Web/API
