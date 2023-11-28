@@ -19,6 +19,8 @@
 1. [Closures](#closures)
 1. [Garbage Collector](#garbage-collector) <br />
 1. [Callback Function](#callback-function)
+2. [Event Loop](#event-loop)
+3. [Callback Queue and Micro Task Queue](#callback-queue-and-micro-task-queue)
 </details>
 
 ### Hoisting
