@@ -225,3 +225,28 @@ In the provided function, a callback function `xx` is passed as an argument, and
 ### Web API's
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/22aaf5b6-5d64-4879-81b0-1b2a438c238c)
 >https://developer.mozilla.org/en-US/docs/Web/API
+
+### Event Loop
+The event loop is a mechanism in JavaScript that allows code to be executed asynchronously. It is a single-threaded loop that is constantly running and checking for events. When an event occurs, the event loop adds the event to a queue `(Callback Queue or Microtask Queue)`. The event loop then checks the call stack to see if it is empty. If it is, the event loop removes the first event from the queue and adds it to the call stack. The event loop then executes the event.
+
+The event loop is responsible for executing all of the code in a JavaScript program. This includes both **synchronous and asynchronous code** . Synchronous code is code that is executed in the order that it is written. Asynchronous code is code that is executed at a later time, even if it is written before other code that is currently being executed.
+
+> https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62
+### Callback Queue and Micro Task Queue
+The Microtask queue has a **higher priority** than the callback queue which means that if both queues are scheduled to be executed at the same time, the microtask queue will be executed first.
+![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/1e7413af-c838-494c-83e9-1e09f6b40f0c)
+
+#### Microtask Queue
+When the asynchronous task is performed with the help of javascript promises, the output from the web browser is pushed to the microtask queue.<br >
+Some examples of tasks that are added to the callback queue include:
++ Promises
++ queueMicrotask()
++ AJAX
+### Callback Queue
+The callback queue is a queue of tasks that are executed after the current task. The callback queue is handled by the JavaScript engine after it has executed all tasks in the microtask queue.<br />
+Some examples of tasks that are added to the callback queue include:
++ SetTimeout()
++ SetInterval()
++ I/O requests ( click, drag and drop and etc events )
+
+> https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
