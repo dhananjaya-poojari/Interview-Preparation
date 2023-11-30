@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-  **Table of Contents**
+  Table of Contents
 </summary>
  
 1. [Javascript](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#javascript-interview-preparation)<br />
