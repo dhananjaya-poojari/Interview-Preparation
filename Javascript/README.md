@@ -252,3 +252,9 @@ Some examples of tasks that are added to the callback queue include:
 + I/O requests ( click, drag and drop and etc events )
 
 > https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
+
+### Google V8 Architecture
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/7f1c98f5-dd1a-4044-84ad-d5441b38b16d)
+
+Absrct syntax Tree, Mark and Sweep, Inlining, Copy Elision, Inline caching, Ignition Interpreter, Turbo Fan optimizer
+> https://astexplorer.net/
