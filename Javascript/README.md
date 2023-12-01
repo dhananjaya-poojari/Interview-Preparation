@@ -164,7 +164,7 @@ counter1.peek();
 When a function is associated with the this keyword, it should be invoked using the new keyword to access the properties or functions attached to it.
 
 ### Garbage Collector
-Garbage Collection is the process of tracking live objects while destroying unreferenced objects in the heap memory to make room for new objects that will be created in the future.
+Garbage Collection is the process of tracking live objects while destroying unreferenced objects in the heap memory to make room for new objects that will be created in the future.<br />
 ![image](https://github.com/dhananjaya-poojari/Javascript-Interview/assets/77887564/d18e2ffa-7174-44c1-ad5e-e6c59c0cd80c) <br />
 In the provided example, `j` remains accessible within the closure or block scope, while `z` is removed. The JavaScript engine, employing its garbage collection mechanism, determines which variables to retain in memory and which to discard.
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management#garbage_collection
