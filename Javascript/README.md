@@ -23,6 +23,7 @@
 3. [Callback Queue and Micro Task Queue](#callback-queue-and-micro-task-queue)
 4. [Google V8 Architecture](#google-v8-architecture)
 5. [Stack and Heap](#stack-and-heap)
+6. [Debouncing](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#debouncing)
 </details>
 
 ### Hoisting
