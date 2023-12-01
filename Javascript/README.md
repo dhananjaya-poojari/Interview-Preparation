@@ -310,3 +310,22 @@ func1();
 ```
 In the above example the array value chaged but int value didn't changed
 >https://medium.com/@mmoshikoo/stack-heap-dont-start-to-code-without-understanding-them-b182313bdf24
+
+### Debouncing
+Debounce is a powerful technique used to optimize event handling by delaying the execution of a function until after a specified period of inactivity.
+```
+function debounce(func, wait, immediate) {
+  var timer;
+  return function() {
+    var args = arguments;
+    var context = this;
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      func.apply(context, args);
+    }, wait);
+    if (immediate) {
+      func.apply(context, args);
+    }
+  };
+}
+```
