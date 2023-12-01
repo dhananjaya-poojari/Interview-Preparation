@@ -22,6 +22,7 @@
 2. [Event Loop](#event-loop)
 3. [Callback Queue and Micro Task Queue](#callback-queue-and-micro-task-queue)
 4. [Google V8 Architecture](#google-v8-architecture)
+5. [Stack and Heap](#stack-and-heap)
 </details>
 
 ### Hoisting
