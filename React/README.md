@@ -7,6 +7,7 @@
  1. [Why Is React a Library?](#why-is-react-a-library)
  2. [Virtual DOM](#virtual-dom)
  3. [How React Life cycle works?](#how-react-life-cycle-works)
+ 4. [Difference between state and props](#difference-between-state-and-props)
 </details>
 
 <details>
@@ -37,5 +38,6 @@ The reconciliation algorithm is a set of rules that React uses to update the DOM
 | Props are immutable and cannot be changed within a component | State is mutable and can be updated using the setState function. |
 | Props are passed down from the parent component and are read-only within the child component | State is only accessible within the component where it is defined. |
 | Props can be used to customize the behavior or appearance of a component | state is used to keep track of information that can change over time. |
+> https://www.linkedin.com/pulse/understanding-difference-between-props-state-react-basit-ch/
 ### Props Drilling 
 Prop drilling is the process of passing down data or state through multiple layers of a component hierarchy. By the way, it refers to the practice of passing data from a parent component to its children and then from the children to their own children and so on, until the data reaches the desired component that needs it.
