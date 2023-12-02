@@ -330,3 +330,4 @@ function debounce(func, wait, immediate) {
   };
 }
 ```
+### Prototypal Inheritance
