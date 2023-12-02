@@ -4,12 +4,15 @@
 <details>
 <summary>Basic Concepts</summary>
 
- 
+ 1. [Why Is React a Library?](#why-is-react-a-library)
+ 2. [Virtual DOM](#virtual-dom)
+ 3. [How React Life cycle works?](#how-react-life-cycle-works)
 </details>
 
 <details>
 <summary>Core Concepts</summary>
- 
+
+ 1. [Reconciliation Algorithm](#reconciliation-algorithm)
 </details>
 
 ### Why Is React a Library?
