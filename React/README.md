@@ -8,6 +8,7 @@
  2. [Virtual DOM](#virtual-dom)
  3. [How React Life cycle works?](#how-react-life-cycle-works)
  4. [Difference between state and props](#difference-between-state-and-props)
+ 5. [React Context](#react-context)
 </details>
 
 <details>
@@ -70,4 +71,39 @@ Prop drilling is the process of passing down data or state through multiple laye
 
 ### React Context
 To access data from anywhere in the app, React developers use the React Context API.
+When the page refreshes or when a user navigates to another page within the application, React Context data will be retained.<br />
+#### createContext
+`createContext` lets you create a context that components can provide or read.
+```
+import { createContext } from 'react';
+
+const SomeContext = createContext(defaultValue); // Default value can object, array or variable
+const UserContext = createContext({
+  user: {
+    name: "Dummy user",
+    email: "dummyemail@gmail.com",
+  },
+});
+```
+#### SomeContext.Provider
+Wrap your components into a context provider to specify the value of this context for all components inside:
+```
+const [user, setUser] = useState({
+    name: "Robin Singh",
+    email: "44robin.rs@gmail.com",
+  });
+  return (
+    <>
+      <UserContext.Provider value={{ user: user, setUser: setUser }}>
+       ///...
+      </UserContext.Provider>
+    </>
+  );
+```
+If we access the `UserContext` within the `UserContext.Provider`, the user's name and email will be "Robin Singh" and "44robin.rs@gmail.com," not the dummy user.
+#### useContext
+useContext is a React Hook that lets you read and subscribe to context from your component.
+```
+  const { user } = useContext(UserContext);
+```
 > Chapter 13 - Data is the new Oil 01:56:00
