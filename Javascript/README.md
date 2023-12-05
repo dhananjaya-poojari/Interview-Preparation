@@ -7,6 +7,7 @@
 1. [Difference between null, undefined and not defined](#difference-between-null-undefined-and-not-defined)<br />
 1. [Class and Constructor](#class-and-constructor)    <br />
 1. [Types of Function](#types-of-function)
+2. [map, filter and reduce](#map-filter-and-reduce)
 </details>
 
 <details>
@@ -24,6 +25,7 @@
 4. [Google V8 Architecture](#google-v8-architecture)
 5. [Stack and Heap](#stack-and-heap)
 6. [Debouncing](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#debouncing)
+7. [Prototypal Inheritance](#prototypal-inheritance)
 </details>
 
 ### Hoisting
@@ -350,3 +352,46 @@ console.log(obj.__proto__.__proto__) // null
 ### map, filter and reduce
 #### map
 The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
+```
+const func = (arr) => {
+  let output = [],
+    i = 0;
+  while (i < arr.length) {
+    output[i] = arr[i] + 10;
+  }
+  return output;
+};
+
+let output = arr.map((i) => i + 10);
+```
+#### filter 
+The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+```
+const func = (arr) => {
+  let output = [],
+    i = 0;
+  while (i < arr.length) {
+    if (arr[i] > 10) output.push(arr[i]);
+  }
+  return output;
+};
+
+let output = arr.filter((i) => i > 10);
+```
+#### reduce
+The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
+```
+const func = (arr) => {
+  let output = 0,
+    i = 0;
+  while (i < arr.length) {
+    output += arr[i];
+  }
+  return output;
+};
+
+let output = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+```
