@@ -331,3 +331,22 @@ function debounce(func, wait, immediate) {
 }
 ```
 ### Prototypal Inheritance
+JavaScript implements inheritance by using objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.By definition, null has no prototype and acts as the final link in this prototype chain.
+![Screenshot 2023-12-05 at 10 02 41 AM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/cf0f2c0c-e73b-47f4-ad9c-42963ee736ab)
+```
+const num = 10;
+const obj = {};
+const arr = [];
+const func = function (){}
+console.log(num.__proto__.__proto__ === obj.__proto__) // true
+console.log(num.__proto__.__proto__ === obj.__proto__) // true
+console.log(func.__proto__.__proto__ === obj.__proto__) // true
+console.log(Array.prototype === arr.__proto__) // true
+console.log(Number.prototype === num.__proto__) // true
+console.log(obj.__proto__.__proto__) // null
+```
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+### map, filter and reduce
+#### map
+The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
