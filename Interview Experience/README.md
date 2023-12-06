@@ -50,7 +50,31 @@ Parallel programming is a subset of concurrent programming that focuses on explo
  #### Differences Between Scoped, Transient, And Singleton Service 
  > https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/
  #### Abstract Class
+The abstract modifier indicates that the thing being modified has a missing or incomplete implementation. 
+```
+abstract class Shape
+{
+    public abstract int GetArea();
+}
+
+class Square : Shape
+{
+    private int _side;
+
+    public Square(int n) => _side = n;
+
+    // GetArea method is required to avoid a compile-time error.
+    public override int GetArea() => _side * _side;
+
+    static void Main()
+    {
+        var sq = new Square(12);
+        Console.WriteLine($"Area of the square = {sq.GetArea()}");
+    }
+}
+```
  #### Thread and Task 
+ > https://stackoverflow.com/questions/4130194/what-is-the-difference-between-task-and-thread
  #### Generics in C#
 Generics in C# is a feature that allows users to create reusable code. It enables users to create classes, methods, and interfaces that work with different data types without explicitly defining the data type.
 ```
