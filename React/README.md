@@ -107,3 +107,59 @@ useContext is a React Hook that lets you read and subscribe to context from your
   const { user } = useContext(UserContext);
 ```
 > Chapter 13 - Data is the new Oil 01:56:00
+
+### Difference between useMemo and useCallback
+ | useMemo | useCallback |
+| ------------- | ------------- |
+|`useMemo` is a React Hook that lets you cache the result of a calculation between re-renders. | `useCallback` is a React Hook that lets you cache a function definition between re-renders. |
+|helping to optimize expensive calculations or data transformations.|reducing unnecessary re-creation of functions and optimizing component re-renders.|
+|returns the memoized value itself.|returns the memoized callback function itself.|
+|Use `useMemo` when you want to optimize and cache the result of a computation that depends on certain inputs.|Use `useCallback` when you want to optimize the creation of callback functions that are passed to child components.|
+|https://react.dev/reference/react/useMemo|https://react.dev/reference/react/useCallback|
+
+### Higher-Order Components
+A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. HOCs allow you to add additional functionality to a component without modifying the component's code.
+```
+const withLogging = (Component) => {
+  return (props) => {
+    console.log('Rendering component', Component.name);
+    return <Component {...props} />;
+  };
+};
+const Button = (props) => {
+  return <button>{props.children}</button>;
+};
+
+
+const LoggedButton = withLogging(Button);
+```
+### Lifecycle of a React Function component
+There are 3 phases in the React Component LifeCycle
+1. Mounting Phase<br>
+During the mounting phase, a functional component is being created and added to the DOM. In this phase, you typically initialise state and perform any setup that's needed when the component is first rendered.<br />
+useEffect : The useEffect hook with an empty dependency array simulates the `componentDidMount` lifecycle method. It runs the provided function after the component is first rendered. This is a good place to perform data fetching or initial setup.
+```
+useEffect(() => {
+///...
+},[])
+```
+2. Updating Phase <br />
+In the updating phase, the functional component is re-rendered due to changes in its props or state. You can use the useEffect hook without an empty dependency array to achieve behaviour similar to `componentDidUpdate`.
+```
+useEffect(() => {
+///...
+})
+```
+3. Unmounting Phase <br />
+In the unmounting phase, the functional component is being removed from the DOM. The cleanup function in the useEffect hook simulates the behaviour of `componentWillUnmount`.
+```
+useEffect(() => {
+///...
+return ()=>{
+///...
+}
+})
+```
+> https://www.linkedin.com/pulse/react-functional-component-lifecycle-manikandan-b/
+
+### 
