@@ -6,9 +6,9 @@
 
  1. [Why Is React a Library?](#why-is-react-a-library)
  2. [Virtual DOM](#virtual-dom)
- 3. [How React Life cycle works?](#how-react-life-cycle-works)
  4. [Difference between state and props](#difference-between-state-and-props)
  5. [React Context](#react-context)
+ 6. [Difference between useMemo and useCallback](#difference-between-usememo-and-usecallback)
 </details>
 
 <details>
@@ -16,6 +16,9 @@
 
  1. [Reconciliation Algorithm](#reconciliation-algorithm)
  2. [Props Drilling](#props-drilling)
+ 3. [Higher-Order Components](#higher-order-components)
+ 4. [How React Life cycle works?](#how-react-life-cycle-works)
+ 5. [Lifecycle of a React Function component](#lifecycle-of-a-react-function-component)
 </details>
 
 ### Why Is React a Library?
