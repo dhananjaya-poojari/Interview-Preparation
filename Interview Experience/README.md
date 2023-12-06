@@ -37,3 +37,14 @@ Allows one application to trigger a function in another application, whether the
  Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.The pattern ensures that an object or function which wants to use a given service should not have to know how to construct those services.
  >https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
 </details>
+
+<details>
+<summary>veArc</summary>
+
+ #### Paralell programming and Concurrent Programming
+ #### Diffrent ways to achieve Dependency Injection
+ #### Abstract Class
+ #### Routing in webserver
+ #### Thread and Task 
+ #### Generics in C#
+</details>
