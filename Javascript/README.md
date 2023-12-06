@@ -26,6 +26,7 @@
 5. [Stack and Heap](#stack-and-heap)
 6. [Debouncing](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#debouncing)
 7. [Prototypal Inheritance](#prototypal-inheritance)
+8. [Two issues while using callbacks](#two-issues-while-using-callbacks)
 </details>
 
 ### Hoisting
