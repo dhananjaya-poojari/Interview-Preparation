@@ -39,13 +39,47 @@ Allows one application to trigger a function in another application, whether the
 </details>
 
 <details>
-<summary>veArc</summary>
+<summary>VeARC</summary>
 
  #### Paralell programming and Concurrent Programming
- #### Diffrent ways to achieve Dependency Injection
+`Concurrent programming`<br />
+Concurrent programming is a way of designing and writing programs that can execute multiple tasks or processes at the same time, without waiting for one to finish before starting another. Concurrent programs can use shared resources, such as memory, files, or network connections, but they need to coordinate and synchronize their access to avoid conflicts and errors. Concurrent programming can improve the performance, responsiveness, and scalability of programs, especially when dealing with multiple inputs, outputs, or users.<br />
+`Parallel programming`<br />
+Parallel programming is a subset of concurrent programming that focuses on exploiting the hardware capabilities of multicore processors, distributed systems, or specialized devices, such as GPUs or FPGAs, to run multiple tasks or processes simultaneously. Parallel programs can use shared or distributed resources, depending on the architecture and communication model. Parallel programming can increase the speed and efficiency of programs, especially when dealing with large or complex data sets, computations, or simulations.
+> https://www.linkedin.com/advice/0/whats-difference-between-concurrent-parallel-programming
+ #### Differences Between Scoped, Transient, And Singleton Service 
+ > https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/
  #### Abstract Class
- #### Routing in webserver
  #### Thread and Task 
  #### Generics in C#
+Generics in C# is a feature that allows users to create reusable code. It enables users to create classes, methods, and interfaces that work with different data types without explicitly defining the data type.
+```
+// Declare the generic class.
+public class GenericList<T>
+{
+    public void Add(T input) { }
+}
+class TestGenericList
+{
+    private class ExampleClass { }
+    static void Main()
+    {
+        // Declare a list of type int.
+        GenericList<int> list1 = new GenericList<int>();
+        list1.Add(1);
+
+        // Declare a list of type string.
+        GenericList<string> list2 = new GenericList<string>();
+        list2.Add("");
+
+        // Declare a list of type ExampleClass.
+        GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
+        list3.Add(new ExampleClass());
+    }
+}
+```
+> https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics
  #### Attribute Routing in ASP.NET MVC
+ Attribute routing is a feature in ASP.NET Core MVC that allows users to define routes directly on their controller and action methods.
+ > https://learn.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
 </details>
