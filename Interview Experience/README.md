@@ -47,7 +47,23 @@ Concurrent programming is a way of designing and writing programs that can execu
 `Parallel programming`<br />
 Parallel programming is a subset of concurrent programming that focuses on exploiting the hardware capabilities of multicore processors, distributed systems, or specialized devices, such as GPUs or FPGAs, to run multiple tasks or processes simultaneously. Parallel programs can use shared or distributed resources, depending on the architecture and communication model. Parallel programming can increase the speed and efficiency of programs, especially when dealing with large or complex data sets, computations, or simulations.
 > https://www.linkedin.com/advice/0/whats-difference-between-concurrent-parallel-programming
- #### Differences Between Scoped, Transient, And Singleton Service 
+ #### Differences Between Scoped, Transient, And Singleton Service or Three service lifetimes available with the Microsoft Dependency Injection container
+ Service lifetimes define the conditions under which a service instance is created and disposed of.
+1. Singleton <br />
+A single instance of a resource that is shared across the application. Singleton services are good for objects that are expensive to create or need to maintain global state. They can also be used for logging services, feature flags, and email services.
+```
+services.AddSingleton<ILoggingService, LoggingService>();
+```
+2. Transient <br />
+A new instance of a resource is created each time it's requested. Transient services are good for lightweight services with little or no state.
+```
+services.AddTransient<ICronJobService,CronJobService>();
+```
+3. Scoped <br />
+A single instance of a resource is shared within a specific scope, such as an HTTP request. Scoped services are good for maintaining state or sharing data within a single request.
+```
+services.AddScoped<IAuthService,AuthService>();
+```
  > https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/
  #### Abstract Class
 The abstract modifier indicates that the thing being modified has a missing or incomplete implementation. 
@@ -74,6 +90,11 @@ class Square : Shape
 }
 ```
  #### Thread and Task 
+ **Task** <br />
+ Tasks class to let you create tasks and run them asynchronously.A task is an object that represents some work that should be done. The task can tell you if the work is completed and if the operation returns a result, the task gives you the result.< br />
+ Example: Basically, a Task<T> "promises" to return you a T, but not right now honey, I'm kinda busy, why don't you come back later?<br />
+ **Thread**<br />
+  A Thread is a small set of executable instructions.When the time comes when the application is required to perform few tasks at the same time.A thread is one of the many possible workers which performs that task.
  > https://stackoverflow.com/questions/4130194/what-is-the-difference-between-task-and-thread
  #### Generics in C#
 Generics in C# is a feature that allows users to create reusable code. It enables users to create classes, methods, and interfaces that work with different data types without explicitly defining the data type.
