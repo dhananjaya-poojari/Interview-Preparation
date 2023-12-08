@@ -407,4 +407,21 @@ The callback function is passed to another callback, this way we lose the contro
 That process is called inversion of control.
 
 ### Promises
+### Difference between foreach of and foareach in
+### Difference between node js and js in browser
+### Polyfill for bind Methos
+```
+Function.prototype.mybind = function (args) {
+  const obj = this,
+    params = args.slice(1);
+  return function (args2) {
+    obj.apply(args[0], [...params, ...args2]);
+  };
+};
+
+```
+### Currying
+Bind and Closure
+
+### Call Method and Apply mathod
 
