@@ -4,7 +4,12 @@
   Table of Contents
 </summary>
 
- 
+ 1. [Horizontal vs Vertical Scaling](#horizontal-vs-vertical-scaling)
+ 2. [Distributed System](#distributed-system)
+ 3. [Load balancing](#load-balancing)
+ 4. [Consistent Hashing](#consistent-hashing)
+ 5. [Message Queue](#message-queue)
+ 6. [Database Sharding](#database-sharding)
 </details>
 
 ### Horizontal vs Vertical Scaling
