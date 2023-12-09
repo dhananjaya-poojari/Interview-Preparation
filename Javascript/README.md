@@ -407,21 +407,97 @@ The callback function is passed to another callback, this way we lose the contro
 That process is called inversion of control.
 
 ### Promises
-### Difference between foreach of and foareach in
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error).<br />
+A Promise is in one of these states:
+1. `pending`: initial state, neither fulfilled nor rejected.
+1. `fulfilled`: meaning that the operation was completed successfully.
+1. `rejected`: meaning that the operation failed.
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise  
+### Difference between for...in and for...of
+`for...in`<br />
+The for...in statement iterates over all enumerable string properties of an object (ignoring properties keyed by symbols), including inherited enumerable properties.
+```
+const object = { a: 1, b: 2, c: 3 };
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+// Expected output:
+// "a: 1" "b: 2" "c: 3"
+const arr = [1,2,3];
+for (const property in arr) {
+  console.log(i);
+}
+// Expected output:
+// 0 1 2
+```
+`for...of`<br />
+The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList.
+```
+const array1 = ['a', 'b', 'c'];
+for (const element of array1) {
+  console.log(element);
+}
+// Output
+// 'a' 'b' 'c'
+```
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 ### Difference between node js and js in browser
+ | node js  | Browser js |
+| ------------- | ------------- |
+|Node.js is used to develop server-side applications.|JavaScript is used to add interactivity to web pages. |
+|Node.js has full system access i.e can read and write directly to the file system.|Browser.js is sandboxed for the safety purposes and have access limited to the browser. |
+|In Node.js many objects are missing like- window, location, document and etc. |In Browser.js many objects are missing like- global,require and etc.|
+|In Node.js everything is a module i.e it is mandatory to keep everything inside a module.|moduling is not mandatory for browser javascript.|
 ### Polyfill for bind Methos
 ```
-Function.prototype.mybind = function (args) {
-  const obj = this,
-    params = args.slice(1);
-  return function (args2) {
-    obj.apply(args[0], [...params, ...args2]);
-  };
+Function.prototype.mybind = function (context, ...args1) {
+  let fn = this;
+  return function (...arg2) {
+      return fn.apply(context, [...args1, ...arg2])
+  }
+};
+```
+
+In the context of the "bind" and "apply" methods in JavaScript, the initial object passed as the first argument becomes accessible within the function through the use of the "this" keyword.<br />
+Example
+```
+let basic = {
+  'name': 'shyam',
+  'age': 24
 };
 
+function callMe(city) {
+  console.log('Hi! my name is ' + this.name + ' and my age is ' + this.age + ' and my city is ' + arguments[0] + ' and state is ' + arguments[1]);
+}
+let callBinded = callMe.bind(basic, 'jammu');
+callBinded('j&k');
 ```
+> https://medium.com/@shyamtayal/lets-write-a-polyfill-for-bind-ac601290aab7
 ### Currying
-Bind and Closure
-
+Currying transforms a function with multiple arguments into a sequence/series of functions, each taking a single argument.<br />
+Two ways you can achieve currying
+1. bind
+   ```
+   const multifly = (x, y) => x * y;
+   const multifyBy2 = multifly.bind(this, 2);
+   console.log(multifyBy2(3));
+   // Output 6
+   ```
+2. Closure
+   ```
+   const multifly = (x) => {
+     return function (y) {
+       return x * y;
+     };
+   };
+   const multifyBy2 = multifly(2);
+   console.log(multifyBy2(3));
+   ```
 ### Call Method and Apply mathod
+Call and apply is a function that helps you change the context of the invoking function.it helps you replace the value of this inside a function with whatever value you want.<br />
+The only `difference` is that in apply you can pass an array as an argument list.
+```
+func.call(thisObj, args1, args2, ...);
+func.apply(thisObj, argumentsArray);
+```
 
