@@ -8,6 +8,11 @@
 1. [Class and Constructor](#class-and-constructor)    <br />
 1. [Types of Function](#types-of-function)
 2. [map, filter and reduce](#map-filter-and-reduce)
+3. [Prototypal Inheritance](#prototypal-inheritance)
+4. [Promises](#promises)
+5. [Difference between for...in and for...of](#difference-between-forin-and-forof)
+6. [Polyfill for bind Method](#polyfill-for-bind-method)
+7. [Call and Apply Method](#call-method-and-apply-mathod)
 </details>
 
 <details>
@@ -24,9 +29,10 @@
 3. [Callback Queue and Micro Task Queue](#callback-queue-and-micro-task-queue)
 4. [Google V8 Architecture](#google-v8-architecture)
 5. [Stack and Heap](#stack-and-heap)
-6. [Debouncing](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#debouncing)
-7. [Prototypal Inheritance](#prototypal-inheritance)
+6. [Debouncing](#debouncing)
 8. [Two issues while using callbacks](#two-issues-while-using-callbacks)
+9. [Difference between node js and js in browser](#difference-between-node-js-and-js-in-browser)
+10. [Currying](#currying)
 </details>
 
 ### Hoisting
@@ -448,7 +454,7 @@ for (const element of array1) {
 |Node.js has full system access i.e can read and write directly to the file system.|Browser.js is sandboxed for the safety purposes and have access limited to the browser. |
 |In Node.js many objects are missing like- window, location, document and etc. |In Browser.js many objects are missing like- global,require and etc.|
 |In Node.js everything is a module i.e it is mandatory to keep everything inside a module.|moduling is not mandatory for browser javascript.|
-### Polyfill for bind Methos
+### Polyfill for bind Method
 ```
 Function.prototype.mybind = function (context, ...args1) {
   let fn = this;
@@ -493,11 +499,11 @@ Two ways you can achieve currying
    const multifyBy2 = multifly(2);
    console.log(multifyBy2(3));
    ```
-### Call Method and Apply mathod
+### Call and Apply Method
 Call and apply is a function that helps you change the context of the invoking function.it helps you replace the value of this inside a function with whatever value you want.<br />
 The only `difference` is that in apply you can pass an array as an argument list.
 ```
 func.call(thisObj, args1, args2, ...);
 func.apply(thisObj, argumentsArray);
 ```
-
+> https://www.freecodecamp.org/news/understand-call-apply-and-bind-in-javascript-with-examples/
