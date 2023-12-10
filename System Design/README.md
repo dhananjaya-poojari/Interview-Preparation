@@ -10,6 +10,12 @@
  4. [Consistent Hashing](#consistent-hashing)
  5. [Message Queue](#message-queue)
  6. [Database Sharding](#database-sharding)
+ 7. [Blob/object Storage](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#blobobject-storage)
+ 8. [CDN](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#cdn)
+ 9. [Database Indexes](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#database-indexes)
+ 10. [API Gateway](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#api-gateway)
+ 11. [Data Replication](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#data-replication)
+ 12. [Web sockets](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/System%20Design#web-sockets)
 </details>
 
 ### Horizontal vs Vertical Scaling
