@@ -57,11 +57,41 @@ A message queue is a type of middleware that allows communication between progra
 Database sharding is a technique for splitting a large database into smaller chunks, called shards.Sharding, also known as horizontal partitioning, is a popular scale-out approach for relational databases.
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/c8f95167-b970-4f78-bfbd-7e3165a41348)
 > https://aws.amazon.com/what-is/database-sharding/
-### SQL or No-SQL based on ACID 
 ### Blob/object Storage
+  Binary Large Object (blob) storage is a type of object storage. Blob storage keeps these masses of data in non-hierarchical storage areas called data lakes; a data lake/pool is a large collection of unstructured data.
+
+  File and block storage are often not flexible enough or scalable enough for modern organizations. By contrast, object storage is so scalable that some consider it to be "unlimited" storage. However, using object storage instead of file or block storage can make data retrieval more complicated.
+
+  Example: <br />
+  Imagine Alice stores her clothes in curated outfits that are ready to be worn, while Bob simply tosses his clothes into a pile. Bob's method is more like blob storage: any item of clothing can go into his pile, and the clothes do not have to be organized in any particular way. Bob's method is advantageous in that he can quickly and almost endlessly grow his pile of clothes: he can just toss more on, instead of folding and organizing them like Alice.
+  > https://www.cloudflare.com/en-gb/learning/cloud/what-is-blob-storage/
 ### CDN
+A content delivery network (CDN) is a group of servers that are spread out across the world. CDNs are also known as content distribution networks.CDNs cache content from a network location that is closest to a user. This speeds up the delivery of content. 
+
+CDNs can cache the following types of content: <br />
+`HTML pages, JavaScript files, Stylesheets, Images, Videos, Large file downloads, Video streaming.`<br />
+
+CDNs can also: 
+- Improve page load speed
+- Handle high traffic loads
+- Reduce bandwidth consumption
+- Load balance between multiple servers
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/31d5de55-f3f0-4940-809f-5dacf060ccf8)
+
+  > https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn/
 ### Database Indexes
+A database index is a data structure that allows for faster access to data. It's made up of two columns: a search key and a data pointer.The key stores the value you want to search for, and the pointer points to the block where the data is located.
+
+When to use? `If the system requires high performing database queries, we should consider using Database Indexes.`
 ### API Gateway
+An API gateway is a software layer that acts as a mediator between client applications and backend services.It's a single endpoint for various APIs that performs tasks such as: Request composition, Routing, Protocol translation.
+
+Some benefits of using an API gateway include: 
+- Securing traffic between API consumer requests and the execution of services
+- If the system has microservices, we should consider using an API Gateway (Authentication, SSL Termination, Routing etc).
 ### Data Replication
+Data replication is the process of copying data from one location to another. It can be used to create identical copies of data across multiple storage locations, systems, or databases.
 ### Web sockets
+WebSocket is a communication protocol that allows for two-way communication between a client and a server over a single TCP connection. This protocol allows for real-time, event-driven communication.You can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 ### Microservice Arhitecture
+### SQL or No-SQL based on ACID 
