@@ -114,6 +114,7 @@ useContext is a React Hook that lets you read and subscribe to context from your
 ### Difference between useMemo and useCallback
  | useMemo | useCallback |
 | ------------- | ------------- |
+|```const memo= React.useMemo(()=>"useMemo")) console.log(memo) // Prints useMemo```|```const callback = React.useCallback(()=>"useCallback")) console.log(callback) // Prints function defination```|
 |`useMemo` is a React Hook that lets you cache the result of a calculation between re-renders. | `useCallback` is a React Hook that lets you cache a function definition between re-renders. |
 |helping to optimize expensive calculations or data transformations.|reducing unnecessary re-creation of functions and optimizing component re-renders.|
 |returns the memoized value itself.|returns the memoized callback function itself.|
