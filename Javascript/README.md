@@ -12,7 +12,7 @@
 4. [Promises](#promises)
 5. [Difference between for...in and for...of](#difference-between-forin-and-forof)
 6. [Polyfill for bind Method](#polyfill-for-bind-method)
-7. [Call and Apply Method](#call-method-and-apply-mathod)
+7. [Call and Apply Method](#call-method-and-apply-method)
 </details>
 
 <details>
@@ -507,3 +507,6 @@ func.call(thisObj, args1, args2, ...);
 func.apply(thisObj, argumentsArray);
 ```
 > https://www.freecodecamp.org/news/understand-call-apply-and-bind-in-javascript-with-examples/
+
+### What is async and await
+### Rest Operator
