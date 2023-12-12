@@ -136,4 +136,9 @@ class TestGenericList
  #### Attribute Routing in ASP.NET MVC
  Attribute routing is a feature in ASP.NET Core MVC that allows users to define routes directly on their controller and action methods.
  > https://learn.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
+### 2nd Round
+#### Difference between iqueryable vs ienumerable
+#### Differences between ExpandoObject, DynamicObject and dynamic
+#### Shallow and Deep copy 
+
 </details>
