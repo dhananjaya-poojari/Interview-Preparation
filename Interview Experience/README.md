@@ -42,10 +42,19 @@ Allows one application to trigger a function in another application, whether the
 <summary>VeARC</summary>
 
  #### Paralell programming and Concurrent Programming
-`Concurrent programming`<br />
-Concurrent programming is a way of designing and writing programs that can execute multiple tasks or processes at the same time, without waiting for one to finish before starting another. Concurrent programs can use shared resources, such as memory, files, or network connections, but they need to coordinate and synchronize their access to avoid conflicts and errors. Concurrent programming can improve the performance, responsiveness, and scalability of programs, especially when dealing with multiple inputs, outputs, or users.<br />
-`Parallel programming`<br />
-Parallel programming is a subset of concurrent programming that focuses on exploiting the hardware capabilities of multicore processors, distributed systems, or specialized devices, such as GPUs or FPGAs, to run multiple tasks or processes simultaneously. Parallel programs can use shared or distributed resources, depending on the architecture and communication model. Parallel programming can increase the speed and efficiency of programs, especially when dealing with large or complex data sets, computations, or simulations.
+##### Concurrent programming
+Multiple processes are executed during a period of time.<br />
+Examples:
+1. Threading: Used in C# to achieve concurrency
+1. Event loop: Used in JavaScript to coordinate the order in which instructions are executed<br />
+##### Parallel programming
+ Multiple tasks or subtasks of the same task run at the same time <br />
+Examples:
+1. Multitasking: Used in Python to achieve parallelism
+2. Multicore or distributed systems: Required for parallel programs
+
+   ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/101308c1-b65e-4b4a-b459-57712246c269)
+
 > https://www.linkedin.com/advice/0/whats-difference-between-concurrent-parallel-programming
  #### Differences Between Scoped, Transient, And Singleton Service or Three service lifetimes available with the Microsoft Dependency Injection container
  Service lifetimes define the conditions under which a service instance is created and disposed of.
