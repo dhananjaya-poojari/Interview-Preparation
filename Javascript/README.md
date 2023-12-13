@@ -13,6 +13,8 @@
 5. [Difference between for...in and for...of](#difference-between-forin-and-forof)
 6. [Polyfill for bind Method](#polyfill-for-bind-method)
 7. [Call and Apply Method](#call-and-apply-method)
+8. [async and await](#async-and-await)
+9. [Rest parameters](#rest-parameters)
 </details>
 
 <details>
@@ -521,5 +523,5 @@ function f(a, b, ...theArgs) {
   const normalArray = args;
   // …
 }
-
 ```
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
