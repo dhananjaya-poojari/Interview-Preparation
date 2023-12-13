@@ -137,8 +137,17 @@ class TestGenericList
  Attribute routing is a feature in ASP.NET Core MVC that allows users to define routes directly on their controller and action methods.
  > https://learn.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
 ### 2nd Round
-#### Difference between iqueryable vs ienumerable
+#### Difference between IQueryable vs IEnumerable
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/9563228e-b634-4ff8-aa9c-109395c73f31)
+
 #### Differences between ExpandoObject, DynamicObject and dynamic
+The `dynamic` keyword is used to declare variables that should be late-bound. If you want to use late binding, for any real or imagined type, you use the dynamic keyword and the compiler does the rest.
+
+`ExpandoObject` is a simple class which allows you to add members to an instance and use them dynamically.<br />
+`DynamicObject` is a more advanced implementation which can be inherited to easily provide customized behavior.
+```
+dynamic expando = new ExpandoObject();
+```
 #### Shallow and Deep copy 
 
 </details>
