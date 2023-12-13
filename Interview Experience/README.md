@@ -149,5 +149,29 @@ The `dynamic` keyword is used to declare variables that should be late-bound. If
 dynamic expando = new ExpandoObject();
 ```
 #### Shallow and Deep copy 
+a shallow copy duplicates the structure of a collection, but not the elements. A deep copy duplicates everything.
 
+`Shallow copy`<br />
+Creates a new collection object and populates it with references. The reference types inside the original object remain shared between the original and the copied object.
+To make a shallow copy of an array in C#, you can use the `Array.Clone()` method.
+```
+A ob1 = new A();
+ob1.a = 10;
+A ob2 = new A();
+ob2 = ob1;
+
+ob1.a = 5;
+// <-- If you see value of ob2.a after this line, it will be 5.
+```
+`Deep copy`<br />
+Creates a new object and then recursively populates it with copies of the original's child object. Each reference type in the original is also deeply copied. The copied object gets its own instances of each reference type.
+```
+ A ob1 = new A();
+ ob1.a = 10;
+ A ob2 = new A();
+ ob2.a = ob1.a;
+
+ ob1.a = 5;
+// <-- If you see value of ob2.a after this line, it will be 10.
+```
 </details>
