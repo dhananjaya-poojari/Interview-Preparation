@@ -508,5 +508,18 @@ func.apply(thisObj, argumentsArray);
 ```
 > https://www.freecodecamp.org/news/understand-call-apply-and-bind-in-javascript-with-examples/
 
-### What is async and await
-### Rest Operator
+### async and await
+Async and await are keywords that can make `asynchronous` code look more like `synchronous` code.
+
+Async functions always return a `promise`. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise.
+
+Async functions can contain zero or more await expressions. Await expressions make promise-returning functions behave as though they're synchronous by suspending execution until the returned promise is fulfilled or rejected.
+### Rest parameters
+The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.
+```
+function f(a, b, ...theArgs) {
+  const normalArray = args;
+  // …
+}
+
+```
