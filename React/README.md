@@ -200,3 +200,7 @@ Write
 Action => Dispatch an action => reducer => updates the slice of redux store
 Read
 Selector -> UI update
+
+### Hooks in redux
+### Middleware
+### Thumb
