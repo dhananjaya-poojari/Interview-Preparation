@@ -166,4 +166,23 @@ return ()=>{
 ```
 > https://www.linkedin.com/pulse/react-functional-component-lifecycle-manikandan-b/
 
-### 
+### Explain what React Fragments are and why they are useful
+React Fragments are a way to group elements in a React component without adding extra nodes to the DOM. This can be useful when you want to return multiple elements from a component, but you don't want them to be wrapped in an extra div.
+```
+const MyComponent = () => {
+  return (
+    <>
+      <h1>This is a heading</h1>
+      <p>This is a paragraph</p>
+    </>
+  );
+};
+```
+### Explain the role of React Router in building single-page applications (SPAs) with React
+React Router is a JavaScript library that helps developers create routing in React applications. It allows developers to define routes and handle navigation between different components in their application. React Router is especially useful for building single-page applications (SPAs), which are web applications that load a single HTML page and dynamically update that page as the user interacts with the application.
+
+Here are some of the benefits of using React Router to build SPAs:
+1. Improved user experience:
+SPAs can provide a more seamless and responsive user experience than traditional multi-page applications, as there is no need to load a new page for each navigation event.
+1. Reduced development time:
+React Router can help developers save time by providing a built-in routing mechanism that they can use to implement navigation in their applications.
