@@ -21,6 +21,12 @@
  5. [Lifecycle of a React Function component](#lifecycle-of-a-react-function-component)
 </details>
 
+<details>
+<summary>Redux</summary>
+
+
+</details>
+
 ### Why Is React a Library?
 React is a JavaScript library used to build reactive websites. While it's not a framework, React does have a dedicated framework called Create React App, which can be used for building web applications. React can be utilized through CDN files; there is no strict requirement to use npm for incorporating React into your projects.
 
@@ -186,3 +192,11 @@ Here are some of the benefits of using React Router to build SPAs:
 SPAs can provide a more seamless and responsive user experience than traditional multi-page applications, as there is no need to load a new page for each navigation event.
 1. Reduced development time:
 React Router can help developers save time by providing a built-in routing mechanism that they can use to implement navigation in their applications.
+
+## Redux
+>https://redux.js.org/introduction/getting-started
+### Redux Store
+Write
+Action => Dispatch an action => reducer => updates the slice of redux store
+Read
+Selector -> UI update
