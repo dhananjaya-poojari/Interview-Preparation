@@ -95,6 +95,9 @@ An API gateway is a software layer that acts as a mediator between client applic
 Some benefits of using an API gateway include: 
 - Securing traffic between API consumer requests and the execution of services
 - If the system has microservices, we should consider using an API Gateway (Authentication, SSL Termination, Routing etc).
+
+  <img src="https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/a820fa2c-520a-463f-8c80-5957593ab3e5" height="550"/>
+
 ### Data Replication
 Data replication is the process of copying data from one location to another. It can be used to create identical copies of data across multiple storage locations, systems, or databases.
 ### Web sockets
