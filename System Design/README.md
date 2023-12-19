@@ -47,7 +47,8 @@ Some examples of load balancing include:
 - IP hash method
 - Weighted least connection method
 
-![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/38757066-2857-41ba-afd7-dd872c22b84e)
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/e42af0b8-15f7-4818-bfce-1d4744243140)
+
 > https://aws.amazon.com/what-is/load-balancing/
 ### Consistent Hashing
 Consistent hashing is a distributed hashing technique that assigns positions to servers and objects in a hash ring.It works well when the number of machines storing data may change. Consistent hashing minimizes the number of keys that need to be remapped when the number of nodes changes.
@@ -104,3 +105,4 @@ Data replication is the process of copying data from one location to another. It
 WebSocket is a communication protocol that allows for two-way communication between a client and a server over a single TCP connection. This protocol allows for real-time, event-driven communication.You can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 ### Microservice Arhitecture
 ### SQL or No-SQL based on ACID 
+### What’s the difference between a load balancer and an API gateway?
