@@ -176,11 +176,23 @@ Creates a new object and then recursively populates it with copies of the origin
 ```
 </details>
 
+<details>
+<summary>Just Answer</summary>
+ 
 delegate and event example
+
 sealed and singleton
-Write singleto
+
+Write singleton example
+
 Async Programming and thread importance
+
 tuple
+
 Map Extension
+
 Custom Middleware
-Caching- response cache, 
+
+Caching- response cache, reddis
+ </details>
+
