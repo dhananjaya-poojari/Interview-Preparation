@@ -175,3 +175,12 @@ Creates a new object and then recursively populates it with copies of the origin
 // <-- If you see value of ob2.a after this line, it will be 10.
 ```
 </details>
+
+delegate and event example
+sealed and singleton
+Write singleto
+Async Programming and thread importance
+tuple
+Map Extension
+Custom Middleware
+Caching- response cache, 
