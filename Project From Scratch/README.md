@@ -86,3 +86,18 @@ root.render(<RouterProvider router={router} />);
 ```
 ## .Net Core
 
+Step 1: Create a new Project 
+
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/aa4c3d57-5070-4d8b-9c1b-8a383e34d21e)
+
+Step 2: Select the ASP.NET Core Web API template and select Next.
+
+Step 3: In the Additional information dialog:
+1. Confirm the Framework is .NET 8.0 (Long Term Support).
+1. Confirm the checkbox for Use controllers(uncheck to use minimal APIs) is checked.
+1. Confirm the checkbox for Enable OpenAPI support is checked.
+1. Select Create.
+
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/166847f1-8869-41eb-9192-e3f3d59dd0ec)
+
+> https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0
