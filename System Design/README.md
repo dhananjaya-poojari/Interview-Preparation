@@ -104,9 +104,17 @@ Some benefits of using an API gateway include:
 Data replication is the process of copying data from one location to another. It can be used to create identical copies of data across multiple storage locations, systems, or databases.
 ### Web sockets
 WebSocket is a communication protocol that allows for two-way communication between a client and a server over a single TCP connection. This protocol allows for real-time, event-driven communication.You can send messages to a server and receive event-driven responses without having to poll the server for a reply.
-### Microservice Arhitecture
+
 ### ACID 
 
  > https://blog.bytebytego.com/i/139604830/what-does-acid-mean
 
+### CAP theorem
+CAP theorem states that any distributed data store can only provide two of the following three guarantees:
+1. Consistency - Every read receives the most recent write or an error.
+2. Availability - Every request receives a response.
+3. Partition tolerance - The system continues to operate in network faults.
+
 ### What’s the difference between a load balancer and an API gateway?
+### Microservice Arhitecture
+### SOLID Principle
