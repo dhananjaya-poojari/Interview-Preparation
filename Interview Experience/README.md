@@ -177,7 +177,7 @@ Creates a new object and then recursively populates it with copies of the origin
 </details>
 
 <details>
-<summary>Just Answer</summary>
+<summary>CBA</summary>
  
 delegate and event example
 
