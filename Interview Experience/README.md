@@ -366,5 +366,7 @@ sealed and singleton
 Write singleton example
 
 Difference Truncate and delete
+
+lock in C#
  </details>
 
