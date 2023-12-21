@@ -178,14 +178,17 @@ Creates a new object and then recursively populates it with copies of the origin
 
 <details>
 <summary>CBA</summary>
- 
+
+ #### Asynchronous programming 
+ Asynchronous programming is a technique that allows a program to run a second set of instructions while focusing on its primary process. It enables a program to start a long-running task and still be responsive to other events while that task runs. Asynchronous programming is a `non-blocking architecture`, which means it doesn't block further execution while one or more operations are in progress. With async programming, multiple related operations can run concurrently without waiting for other tasks to complete. 
+
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/399464fa-c824-4a5c-833b-31d110903070)
+
 delegate and event example
 
 sealed and singleton
 
 Write singleton example
-
-Async Programming and thread importance
 
 tuple
 
