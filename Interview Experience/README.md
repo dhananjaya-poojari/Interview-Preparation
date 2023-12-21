@@ -184,6 +184,109 @@ Creates a new object and then recursively populates it with copies of the origin
 
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/399464fa-c824-4a5c-833b-31d110903070)
 
+#### Custom middleware
+Custom middleware in ASP.NET Core allows developers to run code before or after the request-response cycle.The custom middleware component is like any other .NET class with `Invoke()` method. However, to execute next middleware in a sequence, it should have RequestDelegate type parameter in the constructor.
+```
+using System.Globalization;
+
+namespace Middleware.Example;
+
+public class RequestCultureMiddleware
+{
+    private readonly RequestDelegate _next;
+
+    public RequestCultureMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task Invoke(HttpContext context)
+    {
+     //code dealing with the request
+
+     await _next(context);
+
+     //code dealing with the response
+   }
+}
+
+public static class RequestCultureMiddlewareExtensions
+{
+    public static IApplicationBuilder UseRequestCulture(
+        this IApplicationBuilder builder)
+    {
+        return builder.UseMiddleware<RequestCultureMiddleware>();
+    }
+}
+```
+The middleware class must include:
+
+1. A public constructor with a parameter of type `RequestDelegate`.
+2. A public method named `Invoke` or `InvokeAsync`. This method must:
+3. Return a `Task`.
+   - Accept a first parameter of type `HttpContext`.
+ > https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-8.0
+
+#### Response Caching Middleware
+The middleware determines when responses are cacheable, stores responses, and serves responses from cache.
+```
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddResponseCaching();
+
+var app = builder.Build();
+
+app.UseHttpsRedirection();
+
+// UseCors must be called before UseResponseCaching
+//app.UseCors();
+
+app.UseResponseCaching();
+
+// Controller
+[HttpGet]
+[ResponseCache(Duration = 180, Location = ResponseCacheLocation.Any)]
+public IActionResult getCache()
+{}
+```
+
+#### Map Extension
+The Map extension method branches the request pipeline based on matches of the given request path. If the request path starts with the given path, the branch is executed. 
+```
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Use Middleware Component \n");
+                await next();
+            });
+
+            app.Map("/testmap", MapCustomMiddleware);
+
+            app.Run(async context => {
+                await context.Response.WriteAsync("Run Middleware Component\n");
+            });
+        }
+
+        private void MapCustomMiddleware(IApplicationBuilder app)
+        {
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Specific URL Logic Middleware using Map Method \n");
+            });
+        }
+    }
+```
 delegate and event example
 
 sealed and singleton
@@ -191,13 +294,5 @@ sealed and singleton
 Write singleton example
 
 tuple
-
-Map Extension
-
-Custom Middleware
-
-Response Caching Middleware
-
-Caching- response cache, reddis
  </details>
 
