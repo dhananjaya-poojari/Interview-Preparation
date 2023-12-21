@@ -196,6 +196,8 @@ Map Extension
 
 Custom Middleware
 
+Response Caching Middleware
+
 Caching- response cache, reddis
  </details>
 
