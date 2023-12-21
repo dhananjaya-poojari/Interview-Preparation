@@ -527,3 +527,4 @@ function f(a, b, ...theArgs) {
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 ### Headless browser
+#### DOM and BOM
