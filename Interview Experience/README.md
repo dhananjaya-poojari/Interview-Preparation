@@ -184,6 +184,28 @@ Creates a new object and then recursively populates it with copies of the origin
 
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/399464fa-c824-4a5c-833b-31d110903070)
 
+#### Middleware
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/35ed0037-40ea-4c85-9d55-de6c34f663a2)
+
+Middleware components for common app scenarios:
+
+1. Exception/error handling
+   - When the app runs in the Development environment:
+      - Developer Exception Page Middleware `(UseDeveloperExceptionPage)` reports app runtime errors.
+      - Database Error Page Middleware `(UseDatabaseErrorPage)` reports database runtime errors.
+   - When the app runs in the Production environment:
+      - Exception Handler Middleware `(UseExceptionHandler)` catches exceptions thrown in the following middlewares.
+      -  HTTP Strict Transport Security Protocol (HSTS) Middleware `(UseHsts)` adds the Strict-Transport-Security header.
+3. HTTPS Redirection Middleware `(UseHttpsRedirection)` redirects HTTP requests to HTTPS.
+4. Static File Middleware `(UseStaticFiles)` returns static files and short-circuits further request processing.
+5. Cookie Policy Middleware `(UseCookiePolicy)` conforms the app to the EU General Data Protection Regulation (GDPR) regulations.
+6. Routing Middleware `(UseRouting)` to route requests.
+7. Authentication Middleware `(UseAuthentication)` attempts to authenticate the user before they're allowed access to secure resources.
+8. Authorization Middleware `(UseAuthorization)` authorizes a user to access secure resources.
+9. Session Middleware `(UseSession)` establishes and maintains session state. If the app uses session state, call Session Middleware after Cookie Policy Middleware and before MVC Middleware.
+10. Endpoint Routing Middleware `(UseEndpoints with MapRazorPages)` to add Razor Pages endpoints to the request pipeline.
+
+    > https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0
 #### Custom middleware
 Custom middleware in ASP.NET Core allows developers to run code before or after the request-response cycle.The custom middleware component is like any other .NET class with `Invoke()` method. However, to execute next middleware in a sequence, it should have RequestDelegate type parameter in the constructor.
 ```
@@ -287,12 +309,62 @@ The Map extension method branches the request pipeline based on matches of the g
         }
     }
 ```
-delegate and event example
+#### Tuple types
+The tuples feature provides concise syntax to group multiple data elements in a lightweight data structure.
+```
+(double, int) t1 = (4.5, 3);
+(string, string, string) LookupName(long id) // tuple return type
+{
+    ... // retrieve first, middle and last from data storage
+    return (first, middle, last); // tuple literal
+}
+```
+#### Delegate and event example
+**Delegate**
+```
+using System;
+
+namespace Delegates
+{
+    // Delegate Definition
+    public delegate int operation(int x, int y);
+
+    class Program
+    {
+        // Method that is passes as an Argument
+        // It has same signature as Delegates
+        static int Addition(int a, int b)
+        {
+            return a + b;
+        }
+        static void Multiple(int a, int b)
+        {
+            return a*b;
+        }
+
+        static void Main(string[] args)
+        {
+            // Delegate instantiation
+            operation obj = new operation(Program.Addition);
+            operation[] objArr =
+                     {
+                      new operation(Program.Addition),
+                      new operation(Program.Multiple)
+                     }
+
+            // output
+            Console.WriteLine("Addition is={0}",obj(23,27));
+            Console.WriteLine("Addition is={0}",objArr[1](23,27));
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 sealed and singleton
 
 Write singleton example
 
-tuple
+Difference Truncate and delete
  </details>
 
