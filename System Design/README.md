@@ -16,6 +16,7 @@
  10. [API Gateway](#api-gateway)
  11. [Data Replication](#data-replication)
  12. [Web sockets](#web-sockets)
+ 13. [ACID](#acid)
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -104,5 +105,8 @@ Data replication is the process of copying data from one location to another. It
 ### Web sockets
 WebSocket is a communication protocol that allows for two-way communication between a client and a server over a single TCP connection. This protocol allows for real-time, event-driven communication.You can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 ### Microservice Arhitecture
-### SQL or No-SQL based on ACID 
+### ACID 
+
+ > https://blog.bytebytego.com/i/139604830/what-does-acid-mean
+
 ### What’s the difference between a load balancer and an API gateway?
