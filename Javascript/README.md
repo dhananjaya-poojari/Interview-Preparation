@@ -31,6 +31,7 @@
 10. [Currying](#currying)
 </details>
 
+<details>
 <summary>Browser Concepts</summary>
  
 1. [Garbage Collector](#garbage-collector) <br />
