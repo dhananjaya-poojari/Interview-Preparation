@@ -25,16 +25,22 @@
 1. [Lexical Enviroment](#lexical-enviroment)<br />
 1. [Variable Shadowing](#variable-shadowing) <br />
 1. [Closures](#closures)
-1. [Garbage Collector](#garbage-collector) <br />
 1. [Callback Function](#callback-function)
+6. [Debouncing](#debouncing)
+8. [Two issues while using callbacks](#two-issues-while-using-callbacks)
+10. [Currying](#currying)
+</details>
+
+<summary>Browser Concepts</summary>
+ 
+1. [Garbage Collector](#garbage-collector) <br />
 2. [Event Loop](#event-loop)
 3. [Callback Queue and Micro Task Queue](#callback-queue-and-micro-task-queue)
 4. [Google V8 Architecture](#google-v8-architecture)
 5. [Stack and Heap](#stack-and-heap)
-6. [Debouncing](#debouncing)
-8. [Two issues while using callbacks](#two-issues-while-using-callbacks)
 9. [Difference between node js and js in browser](#difference-between-node-js-and-js-in-browser)
-10. [Currying](#currying)
+11. [Headless browser](#headless-browser)
+12. [DOM and BOM](#dom-and-bom)
 </details>
 
 ### Hoisting
