@@ -527,4 +527,14 @@ function f(a, b, ...theArgs) {
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 ### Headless browser
-#### DOM and BOM
+A headless browser is a web browser without a graphical user interface. Headless browsers provide automated control of a web page in an environment similar to popular web browsers, but they are executed via a command-line interface or using network communication.
+
+Headless browsers are mainly used for: 
+- Running automated quality assurance tests
+- Scraping websites
+
+  
+### DOM and BOM
+The BOM (Browser Object Model) consists of the objects `navigator`, `history`, `screen`, `location` and document which are children of window.
+
+In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page.e.g. `document` and all traversal you would do in it, `events`, etc.
