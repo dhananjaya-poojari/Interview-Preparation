@@ -416,12 +416,31 @@ lock (balanceLock)
 }
 ```
 When accessing the balance always access inside lock 
-sealed and singleton
+> https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/lock
 
-Write singleton example
+#### Singleton Design Pattern In C#
+Always use sealed for singleton class
+```
+public sealed class Singleton2 {
+    private Singleton2() {}
+    private static readonly object lock = new object();
+    private static Singleton2 instance = null;
+    public static Singleton2 Instance {
+        get {
+            lock(lock) {
+                if (instance == null) {
+                    instance = new Singleton2();
+                }
+                return instance;
+            }
+        }
+    }
+}
+```
+> https://www.c-sharpcorner.com/UploadFile/8911c4/singleton-design-pattern-in-C-Sharp/
 
-Difference Truncate and delete
+#### Difference Truncate and delete
+The DELETE command is used to delete particular records from a table. The TRUNCATE command is used to delete the complete data from the table.
 
-lock in C#
  </details>
 
