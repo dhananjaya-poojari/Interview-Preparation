@@ -24,7 +24,9 @@
 <details>
 <summary>Redux</summary>
 
-
+1. [Starting](#redux)
+2. [Redux Store](#redux-store)
+3. [Hooks in redux](#hooks-in-redux)
 </details>
 
 ### Why Is React a Library?
