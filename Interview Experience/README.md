@@ -337,7 +337,7 @@ namespace Delegates
         {
             return a + b;
         }
-        static void Multiple(int a, int b)
+        static int Multiple(int a, int b)
         {
             return a*b;
         }
@@ -345,12 +345,12 @@ namespace Delegates
         static void Main(string[] args)
         {
             // Delegate instantiation
-            operation obj = new operation(Program.Addition);
+            operation obj = new operation(Addition);
             operation[] objArr =
                      {
-                      new operation(Program.Addition),
-                      new operation(Program.Multiple)
-                     }
+                      new operation(Addition),
+                      new operation(Multiple)
+                     };
 
             // output
             Console.WriteLine("Addition is={0}",obj(23,27));
@@ -360,7 +360,62 @@ namespace Delegates
     }
 }
 ```
+**Event** <br />
+Event Handlers can't return a value. They are always void.
+```
+using System;
 
+namespace Delegates
+{
+    public delegate void DelEventHandler();
+
+    class Program
+    {
+        public static event DelEventHandler add;
+
+        static void Main(string[] args)
+        {
+            add += new DelEventHandler(USA);
+            add += new DelEventHandler(India);
+            add += new DelEventHandler(England);
+            add.Invoke(); // or add(); both are same
+
+            Console.ReadLine();
+        }
+        static void USA()
+        {
+            Console.WriteLine("USA");
+        }
+
+        static void India()
+        {
+            Console.WriteLine("India");
+        }
+
+        static void England()
+        {
+            Console.WriteLine("England");
+        }
+    }
+}
+```
+> https://www.c-sharpcorner.com/UploadFile/84c85b/delegates-and-events-C-Sharp-net/
+
+#### lock statement
+When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, private readonly object balanceLock = new object();) or another instance that is unlikely to be used as a lock object by unrelated parts of the code.
+```
+private readonly object balanceLock = new object();
+private decimal balance;
+lock (balanceLock)
+{
+  if (balance >= amount)
+  {
+   balance -= amount;
+   appliedAmount = amount;
+  }
+}
+```
+When accessing the balance always access inside lock 
 sealed and singleton
 
 Write singleton example
