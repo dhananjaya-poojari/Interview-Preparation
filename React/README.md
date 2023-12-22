@@ -194,13 +194,78 @@ SPAs can provide a more seamless and responsive user experience than traditional
 React Router can help developers save time by providing a built-in routing mechanism that they can use to implement navigation in their applications.
 
 ## Redux
+```
+npm i @reduxjs/toolkit react-redux
+```
 >https://redux.js.org/introduction/getting-started
-### Redux Store
-Write
-Action => Dispatch an action => reducer => updates the slice of redux store
-Read
-Selector -> UI update
 
+#### Write Operation
+Action(`OnClick`, `OnChange`) => Dispatch an action(`useDispatch`)
+```
+const dispatch = useDispatch();
+<button
+  className={redButton}
+  onClick={() => {
+    dispatch(removeItem(x));
+  }}
+>
+  Remove
+</button>;
+```
+ => reducer  => updates the slice of redux store (`state`)
+```
+addItem: (state, action) => {
+      state.items.push(action.payload);
+    }
+```
+
+### Redux Store
+`createSlice`<br />
+A function that accepts an initial state, an object of reducer functions, and a "slice name", and automatically generates action creators and action types that correspond to the reducers and state.
+```
+import { configureStore, createSlice } from "@reduxjs/toolkit";
+
+// Create Slice
+const cartSlice = createSlice({
+  name: "cart",
+  initialState: {
+    items: [],
+  },
+  reducers: {
+    addItem: (state, action) => {
+      state.items.push(action.payload);
+    },
+    removeItem: (state, action) => {
+      state.items = state.items.filter((x) => x !== action.payload);
+    },
+    clearCart: (state) => {
+      state.items = [];
+    },
+  },
+});
+
+export const { addItem, removeItem, clearCart } = cartSlice.actions;
+export default cartSlice.reducer;
+```
+`configureStore` <br />
+The standard method for creating a Redux store. It uses the low-level Redux core createStore method internally, but wraps that to provide good defaults to the store setup for a better development experience.
+```
+const store = configureStore({
+  reducer: {
+    cart: cartReducer,
+  },
+});
+
+export default store;
+```
 ### Hooks in redux
+#### useSelector()
+Allows you to extract data from the Redux store state for use in this component, using a selector function.
+```
+  const cartItems = useSelector((store) => store.cart.items);
+```
+#### useDispatch()
+This hook returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.
+> https://react-redux.js.org/api/hooks
 ### Middleware
 ### Thumb
