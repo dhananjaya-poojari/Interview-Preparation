@@ -17,6 +17,7 @@
  11. [Data Replication](#data-replication)
  12. [Web sockets](#web-sockets)
  13. [ACID](#acid)
+ 14. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -117,6 +118,7 @@ CAP theorem states that any distributed data store can only provide two of the f
 
 ### Difference between HTTP 302 Redirect and HTTP 301 Redirect
 `HTTP 302 Redirect` status is sent back to the browser instead of `HTTP 301 Redirect`. A 301 redirect means that the page has permanently moved to a new location. A 302 redirect means that the move is only temporary. Thus, returning 302 redirect will ensure all requests for redirection reaches to our backend and we can perform analytics (Which is a functional requirement).
+
 ### What’s the difference between a load balancer and an API gateway?
 ### Microservice Arhitecture
 ### SOLID Principle
