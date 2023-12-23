@@ -115,6 +115,8 @@ CAP theorem states that any distributed data store can only provide two of the f
 2. Availability - Every request receives a response.
 3. Partition tolerance - The system continues to operate in network faults.
 
+### Difference between HTTP 302 Redirect and HTTP 301 Redirect
+`HTTP 302 Redirect` status is sent back to the browser instead of `HTTP 301 Redirect`. A 301 redirect means that the page has permanently moved to a new location. A 302 redirect means that the move is only temporary. Thus, returning 302 redirect will ensure all requests for redirection reaches to our backend and we can perform analytics (Which is a functional requirement).
 ### What’s the difference between a load balancer and an API gateway?
 ### Microservice Arhitecture
 ### SOLID Principle
