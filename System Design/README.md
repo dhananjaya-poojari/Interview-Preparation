@@ -26,6 +26,7 @@
 
  1. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
  1. [How to Improve API Performance?](#how-to-improve-api-performance)
+ 2. [What’s the difference between a load balancer and an API gateway?]()
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -145,5 +146,8 @@ To reduce data transmission time, requests and responses can be compressed (e.g.
 Connection Pooling: 
 This technique involves using a pool of open connections to manage database interaction, which reduces the overhead associated with opening and closing connections each time data needs to be loaded. The pool manages the lifecycle of connections for efficient resource use.
 ### What’s the difference between a load balancer and an API gateway?
+API Gateway acts as a single entry point for all API requests and provides features such as request routing, rate limiting, authentication, and API versioning and also hide the complexities of the underlying microservices from the client applications.
+
+Load Balancer, on the other hand, is responsible for distributing incoming request across multiple instances of a microservice to improve availability, performance, and scalability. It helps to evenly distribute the workload across multiple instances and ensures that each instance is utilized to its fullest potential.
 ### Microservice Arhitecture
 ### SOLID Principle
