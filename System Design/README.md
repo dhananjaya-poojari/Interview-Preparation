@@ -25,7 +25,7 @@
 </summary>
 
  1. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
- 1. [How to Improve API Performance?]()
+ 1. [How to Improve API Performance?](#how-to-improve-api-performance)
 </details>
 
 ### Horizontal vs Vertical Scaling
