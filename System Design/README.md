@@ -17,7 +17,15 @@
  11. [Data Replication](#data-replication)
  12. [Web sockets](#web-sockets)
  13. [ACID](#acid)
- 14. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
+</details>
+
+<details>
+<summary>
+  Interview Questions
+</summary>
+
+ 1. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
+ 1. [How to Improve API Performance?]()
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -119,6 +127,23 @@ CAP theorem states that any distributed data store can only provide two of the f
 ### Difference between HTTP 302 Redirect and HTTP 301 Redirect
 `HTTP 302 Redirect` status is sent back to the browser instead of `HTTP 301 Redirect`. A 301 redirect means that the page has permanently moved to a new location. A 302 redirect means that the move is only temporary. Thus, returning 302 redirect will ensure all requests for redirection reaches to our backend and we can perform analytics (Which is a functional requirement).
 
+### How to Improve API Performance?
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/8d0ae19d-7ace-42e8-8db9-ff62739d4c4a)
+
+Result Pagination: 
+This method is used to optimize large result sets by streaming them back to the client, enhancing service responsiveness and user experience.
+
+Asynchronous Logging: 
+This approach involves sending logs to a lock-free buffer and returning immediately, rather than dealing with the disk on every call. Logs are periodically flushed to the disk, significantly reducing I/O overhead.
+
+Data Caching: 
+Frequently accessed data can be stored in a cache to speed up retrieval. Clients check the cache before querying the database, with data storage solutions like Redis offering faster access due to in-memory storage.
+
+Payload Compression: 
+To reduce data transmission time, requests and responses can be compressed (e.g., using gzip), making the upload and download processes quicker.
+
+Connection Pooling: 
+This technique involves using a pool of open connections to manage database interaction, which reduces the overhead associated with opening and closing connections each time data needs to be loaded. The pool manages the lifecycle of connections for efficient resource use.
 ### What’s the difference between a load balancer and an API gateway?
 ### Microservice Arhitecture
 ### SOLID Principle
