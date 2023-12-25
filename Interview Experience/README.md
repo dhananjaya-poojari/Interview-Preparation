@@ -38,7 +38,8 @@ Allows one application to trigger a function in another application, whether the
  > https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
 
 #### Exception handling
-
+A try block is used by C# programmers to partition code that might be affected by an exception. Associated catch blocks are used to handle any resulting exceptions. A finally block contains code that is run whether or not an exception is thrown in the try block, such as releasing resources that are allocated in the try block. A try block requires one or more associated catch blocks, or a finally block, or both.
+> https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling
 
 </details>
 
