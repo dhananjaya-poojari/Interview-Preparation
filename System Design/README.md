@@ -101,6 +101,9 @@ CDNs can also:
 A database index is a data structure that allows for faster access to data. It's made up of two columns: a search key and a data pointer.The key stores the value you want to search for, and the pointer points to the block where the data is located.
 
 When to use? `If the system requires high performing database queries, we should consider using Database Indexes.`
+
+Example: We currently utilize `Apache Solr` for our search functionality. Once we obtain IDs from `Apache Solr`, we retrieve the associated data directly based on these IDs, bypassing the need to perform additional searches in the database.
+  
 ### API Gateway
 An API gateway is a software layer that acts as a mediator between client applications and backend services.It's a single endpoint for various APIs that performs tasks such as: Request composition, Routing, Protocol translation.
 
