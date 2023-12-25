@@ -35,7 +35,11 @@ Allows one application to trigger a function in another application, whether the
 1. **Database middleware** : ODBC, JDBC and transaction processing monitors
  #### Dependecy Injection
  Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.The pattern ensures that an object or function which wants to use a given service should not have to know how to construct those services.
- >https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
+ > https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
+
+#### Exception handling
+
+
 </details>
 
 <details>
