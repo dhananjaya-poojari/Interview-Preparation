@@ -277,6 +277,7 @@ Some examples of tasks that are added to the callback queue include:
 
 ### Google V8 Architecture
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/7f1c98f5-dd1a-4044-84ad-d5441b38b16d)
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/fe92e7f9-ae5d-4c56-b5b7-1443559dab17)
 
 #### Absrct syntax Tree
 Abstract syntax trees are data structures widely used in compilers , due to their property of representing the structure of program code.
