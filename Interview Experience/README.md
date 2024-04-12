@@ -454,3 +454,10 @@ The DELETE command is used to delete particular records from a table. The TRUNCA
 
  </details>
 
+<details>
+<summary>TCS</summary>
+
+#### What are the types of routing in ASP.NET MVC?
+**Conventional routing**
+
+ </details>
