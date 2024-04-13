@@ -456,8 +456,18 @@ The DELETE command is used to delete particular records from a table. The TRUNCA
 
 <details>
 <summary>TCS</summary>
+ 
+##### 1st Round
+ 
+ 1. What are the types of routing in ASP.NET MVC?
 
-#### What are the types of routing in ASP.NET MVC?
-**Conventional routing**
-
+##### 2nd Round
+1. What is use of singleton design pattern over static class;
+2. Task await
+3. difference between var and dynamic
+4. What is symmantic Element?
+5. What is Psuedo class and use of that
+6. Can we create our own tag in html
+7. Autocomplete in html
+8. SOLID Principle - Open CLosed
  </details>
