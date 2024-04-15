@@ -458,16 +458,56 @@ The DELETE command is used to delete particular records from a table. The TRUNCA
 <summary>TCS</summary>
  
 ##### 1st Round
- 
- 1. What are the types of routing in ASP.NET MVC?
+#### What are the types of routing in ASP.NET MVC?
+**Attribute routing**
+It will be possible to use the Attribute Routing feature by placing a route on the action method or the controller.
+```
+[Route(“”)]
+```
+**Conventional routing**
+Once a fresh ASP.net Core MVC application is created by making use of the default template, the app configures a default routing.The default route template is configured by MVC as
+```
+ {controller=Home}/{action=Index}/{id?}
+```
+### 2nd Round
+#### What is use of singleton design pattern over static class?
+ | Singleton Design Pattern  | Static Class |
+| ------------- | ------------- |
+| Singleton objects are stored in the heap	| static objects are stored in the stack. |
+| We can clone a singleton object as long as the designer allows it	| we cannot clone a static class object. | 
+| Singleton classes follow object-oriented programming (OOP) principles| 	static classes do not. | 
+| We can implement an interface through a singleton class| 	not through the static methods of a class | 
+| A singleton can be initialized lazily or asynchronously | a static class is generally initialized when it is first loaded |
 
-##### 2nd Round
-1. What is use of singleton design pattern over static class;
-2. Task await
-3. difference between var and dynamic
-4. What is symmantic Element?
-5. What is Psuedo class and use of that
-6. Can we create our own tag in html
-7. Autocomplete in html
-8. SOLID Principle - Open CLosed
+#### Task Wait
+Waits for the Task to complete execution.
+```
+public static void Main()
+   {
+      Task t = Task.Run( () => {
+                           // Some operation
+                         } );
+     t.Wait();
+   }
+```
+#### Difference between var and dynamic    
+   | Var  | Dynamic |
+| ------------- | ------------- |
+| The compiler determines the variable's type at compile time.	| The compiler determines the variable's type during run-time. |
+| This type of variable should be initialized when it is declared. As a result, the compiler will determine the type of the variable based on the value it was initialized with.	| This type of variable does not require initialization at the time of declaration. Because at compilation time, the compiler does not know the type of the variable. | 
+| Throws an error if a variable is not initialized.	| 	There will be no error if the variable is not initialized. | 
+| We can implement an interface through a singleton class| 	not through the static methods of a class | 
+| It can't be used to return values from a function or for properties. It can only be used as a function's local variable. | It can be used to return values from a function or for properties. |
+#### What is symmantic Element?
+A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
+
+#### What is Psuedo class and use of that
+### Can we create our own tag in html
+Yes we can create 
+
+> https://stackoverflow.com/questions/5682943/how-to-create-custom-tags-for-html
+
+#### Autocomplete in html
+autocomplete is attribute you can use in input, form and etc.
+#### SOLID Principle - Open CLosed
  </details>
