@@ -451,13 +451,13 @@ public sealed class Singleton2 {
 
 #### Difference Truncate and delete
 The DELETE command is used to delete particular records from a table. The TRUNCATE command is used to delete the complete data from the table.
-
- </details>
+</details>
 
 <details>
 <summary>TCS</summary>
  
 ### 1st Round
+
 #### What are the types of routing in ASP.NET MVC?
 **Attribute routing**
 It will be possible to use the Attribute Routing feature by placing a route on the action method or the controller.
@@ -469,7 +469,9 @@ Once a fresh ASP.net Core MVC application is created by making use of the defaul
 ```
  {controller=Home}/{action=Index}/{id?}
 ```
+
 ### 2nd Round
+
 #### What is use of singleton design pattern over static class?
  | Singleton Design Pattern  | Static Class |
 | ------------- | ------------- |
@@ -490,6 +492,7 @@ public static void Main()
      t.Wait();
    }
 ```
+
 #### Difference between var and dynamic    
    | Var  | Dynamic |
 | ------------- | ------------- |
@@ -497,25 +500,24 @@ public static void Main()
 | This type of variable should be initialized when it is declared. As a result, the compiler will determine the type of the variable based on the value it was initialized with.	| This type of variable does not require initialization at the time of declaration. Because at compilation time, the compiler does not know the type of the variable. | 
 | Throws an error if a variable is not initialized.	| 	There will be no error if the variable is not initialized. | 
 | It can't be used to return values from a function or for properties. It can only be used as a function's local variable. | It can be used to return values from a function or for properties. |
+
 #### What is symmantic Element?
 A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
 
 #### What is Psuedo class and use of that
-### Can we create our own tag in html
+A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
+
+#### Can we create our own tag in html
 Yes we can create 
 
 > https://stackoverflow.com/questions/5682943/how-to-create-custom-tags-for-html
 
 #### Autocomplete in html
 autocomplete is attribute you can use in input, form and etc.
-#### SOLID Principle - Open CLosed
- </details>
+
+#### SOLID Principle
+</details>
 
 <details>
 <summary>Empyra</summary>
-
-#### Garbage Collection in .Net
-#### throw and throw ex
-#### Fourth highest salary in SQL
- 
- </details>
+</details>
