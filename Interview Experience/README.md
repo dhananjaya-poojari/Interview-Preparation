@@ -511,9 +511,6 @@ autocomplete is attribute you can use in input, form and etc.
 #### SOLID Principle - Open CLosed
  </details>
 
-
- </details>
-
 <details>
 <summary>Empyra</summary>
 
