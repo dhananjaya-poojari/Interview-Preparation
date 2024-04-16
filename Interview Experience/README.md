@@ -516,6 +516,12 @@ Yes we can create
 autocomplete is attribute you can use in input, form and etc.
 
 #### SOLID Principle
+1. Single-Responsibility Principle
+2. Open-Closed Principle
+3. Liskov Substitution Principle - This means that every subclass or derived class should be substitutable for their base or parent class.
+4. Interface Segregation Principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+5. Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+
 </details>
 
 <details>
