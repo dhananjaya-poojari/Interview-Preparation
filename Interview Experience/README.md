@@ -515,7 +515,7 @@ Yes we can create
 #### Autocomplete in html
 autocomplete is attribute you can use in input, form and etc.
 
-#### SOLID Principle
+#### Autocomplete in html
 1. Single-Responsibility Principle
 2. Open-Closed Principle
 3. Liskov Substitution Principle - This means that every subclass or derived class should be substitutable for their base or parent class.
