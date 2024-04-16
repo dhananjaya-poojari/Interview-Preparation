@@ -496,7 +496,6 @@ public static void Main()
 | The compiler determines the variable's type at compile time.	| The compiler determines the variable's type during run-time. |
 | This type of variable should be initialized when it is declared. As a result, the compiler will determine the type of the variable based on the value it was initialized with.	| This type of variable does not require initialization at the time of declaration. Because at compilation time, the compiler does not know the type of the variable. | 
 | Throws an error if a variable is not initialized.	| 	There will be no error if the variable is not initialized. | 
-| We can implement an interface through a singleton class| 	not through the static methods of a class | 
 | It can't be used to return values from a function or for properties. It can only be used as a function's local variable. | It can be used to return values from a function or for properties. |
 #### What is symmantic Element?
 A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
