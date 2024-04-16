@@ -457,7 +457,7 @@ The DELETE command is used to delete particular records from a table. The TRUNCA
 <details>
 <summary>TCS</summary>
  
-##### 1st Round
+### 1st Round
 #### What are the types of routing in ASP.NET MVC?
 **Attribute routing**
 It will be possible to use the Attribute Routing feature by placing a route on the action method or the controller.
