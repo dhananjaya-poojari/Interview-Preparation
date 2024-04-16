@@ -33,6 +33,7 @@ Customer customer = customers["Ali G"] as Customer;
 1. **Remote procedure call (RPC) middleware**
 Allows one application to trigger a function in another application, whether they reside in the same network.
 1. **Database middleware** : ODBC, JDBC and transaction processing monitors
+   
  #### Dependecy Injection
  Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.The pattern ensures that an object or function which wants to use a given service should not have to know how to construct those services.
  
@@ -471,7 +472,6 @@ Once a fresh ASP.net Core MVC application is created by making use of the defaul
 ```
 
 ### 2nd Round
-
 #### What is use of singleton design pattern over static class?
  | Singleton Design Pattern  | Static Class |
 | ------------- | ------------- |
@@ -522,8 +522,4 @@ autocomplete is attribute you can use in input, form and etc.
 4. Interface Segregation Principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
 5. Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
 
-</details>
-
-<details>
-<summary>Empyra</summary>
 </details>
