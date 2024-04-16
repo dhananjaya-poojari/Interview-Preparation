@@ -502,7 +502,7 @@ public static void Main()
 | It can't be used to return values from a function or for properties. It can only be used as a function's local variable. | It can be used to return values from a function or for properties. |
 
 #### What is symmantic Element?
-A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
+A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: `<div>` and `<span>` - Tells nothing about its content. Examples of semantic elements: `<form>` , `<table>` , and `<article>` - Clearly defines its content.
 
 #### What is Psuedo class and use of that
 A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
