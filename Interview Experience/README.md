@@ -523,3 +523,13 @@ autocomplete is attribute you can use in input, form and etc.
 5. Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
 
 </details>
+
+<details>
+<summary>Empyra</summary>
+
+### 1st Round
+#### Garbage Collection in .Net
+#### Difference between throw and throw ex
+#### Fourth highest in SQL table
+
+</details>
