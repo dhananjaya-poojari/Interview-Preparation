@@ -529,7 +529,8 @@ autocomplete is attribute you can use in input, form and etc.
 
 ### 1st Round
 #### Garbage Collection in .Net
-The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks.The GC.Collect method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously.
+The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks.The GC.Collect method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously.<br>
+Also we can use `IDisposable` Interface for releasing unmanaged resources. We should call/create a object with `using` statement it will trigger dispose method.
 #### Difference between throw and throw ex
 **throw ex** resets the stack trace (so your errors would appear to originate from HandleException)
 
