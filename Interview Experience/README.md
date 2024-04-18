@@ -548,5 +548,42 @@ So it also has the benefit of calling Dispose() even if an unhandled exception i
 
 **throw** doesn't - the original offender would be preserved.
 #### Fourth highest in SQL table
+```
+select salary from Employee order by salary desc limit 1 offset 4;
+```
 
+### 2nd Round
+#### How is it possible to create an object from the abstract class?
+```
+namespace ConsoleApplication1
+{
+    public class Circle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw a Circle");
+        }
+    }
+
+    public abstract class Shape
+    {    
+        public abstract void Draw();
+    }
+}
+```
+You can do like this
+```
+class Program
+{
+    static void Main(string[] args)
+    {       
+        Shape v;
+        v = new Circle();
+        v.Draw();
+    }
+}
+```
+#### Multicast Delegate
+#### 403 Status Code
+#### use strict in JS file
 </details>
