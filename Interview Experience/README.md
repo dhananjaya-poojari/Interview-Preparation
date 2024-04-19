@@ -586,4 +586,8 @@ class Program
 #### Multicast Delegate
 #### 403 Status Code
 #### use strict in JS file
+
+### 3rd Round
+#### Normalization in SQL
+#### Group by rules
 </details>
