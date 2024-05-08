@@ -73,6 +73,8 @@ A message queue is a type of middleware that allows communication between progra
 > https://youtu.be/oUJbuFMyBDk?feature=shared
 ### Database Sharding
 Database sharding is a technique for splitting a large database into smaller chunks, called shards.Sharding, also known as horizontal partitioning, is a popular scale-out approach for relational databases.
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/96a6627b-e523-4662-99f3-f22f2d97e435)
+
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/c8f95167-b970-4f78-bfbd-7e3165a41348)
 > https://aws.amazon.com/what-is/database-sharding/
 ### Blob/object Storage
