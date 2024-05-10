@@ -17,6 +17,7 @@
  11. [Data Replication](#data-replication)
  12. [Web sockets](#web-sockets)
  13. [ACID](#acid)
+ 14. [OAuth 2.0](#oauth-20)
 </details>
 
 <details>
@@ -129,6 +130,10 @@ CAP theorem states that any distributed data store can only provide two of the f
 1. Consistency - Every read receives the most recent write or an error.
 2. Availability - Every request receives a response.
 3. Partition tolerance - The system continues to operate in network faults.
+
+### OAuth 2.0
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/947b8717-2e41-4e4b-b7af-700f23f0029f)
+
 
 ### Difference between HTTP 302 Redirect and HTTP 301 Redirect
 `HTTP 302 Redirect` status is sent back to the browser instead of `HTTP 301 Redirect`. A 301 redirect means that the page has permanently moved to a new location. A 302 redirect means that the move is only temporary. Thus, returning 302 redirect will ensure all requests for redirection reaches to our backend and we can perform analytics (Which is a functional requirement).
