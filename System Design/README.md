@@ -18,6 +18,7 @@
  12. [Web sockets](#web-sockets)
  13. [ACID](#acid)
  14. [OAuth 2.0](#oauth-20)
+ 15. [REST vs GraphQL](#rest-vs-graphql)
 </details>
 
 <details>
@@ -122,6 +123,7 @@ Data replication is the process of copying data from one location to another. It
 WebSocket is a communication protocol that allows for two-way communication between a client and a server over a single TCP connection. This protocol allows for real-time, event-driven communication.You can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 
 ### ACID 
+![ACID](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/b7dfc853-6e5d-4e68-b810-e3b77ac9ef18)
 
  > https://blog.bytebytego.com/i/139604830/what-does-acid-mean
 
@@ -133,6 +135,10 @@ CAP theorem states that any distributed data store can only provide two of the f
 
 ### OAuth 2.0
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/947b8717-2e41-4e4b-b7af-700f23f0029f)
+
+### REST vs GraphQL
+![Rest vs GraphQL](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/cf54f02b-ff99-4008-8662-44dd5ea18e33)
+
 
 
 ### Difference between HTTP 302 Redirect and HTTP 301 Redirect
