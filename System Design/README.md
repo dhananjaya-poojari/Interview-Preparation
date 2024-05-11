@@ -1,4 +1,4 @@
-![Message Queue](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/744b5cf4-9047-496e-9a60-c23cb83eea50)# System Design
+# System Design
 <details>
 <summary>
   Table of Contents
