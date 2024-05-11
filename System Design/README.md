@@ -1,4 +1,4 @@
-# System Design
+![Message Queue](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/744b5cf4-9047-496e-9a60-c23cb83eea50)# System Design
 <details>
 <summary>
   Table of Contents
@@ -29,6 +29,7 @@
  1. [Difference between HTTP 302 Redirect and HTTP 301 Redirect](#difference-between-http-302-redirect-and-http-301-redirect)
  1. [How to Improve API Performance?](#how-to-improve-api-performance)
  2. [What’s the difference between a load balancer and an API gateway?](#whats-the-difference-between-a-load-balancer-and-an-api-gateway)
+ 3. [What’s the difference between a Kafka and RabbitMQ?](#whats-the-difference-between-a-kafka-and-rabbitmq)
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -165,5 +166,18 @@ This technique involves using a pool of open connections to manage database inte
 API Gateway acts as a single entry point for all API requests and provides features such as request routing, rate limiting, authentication, and API versioning and also hide the complexities of the underlying microservices from the client applications.
 
 Load Balancer, on the other hand, is responsible for distributing incoming request across multiple instances of a microservice to improve availability, performance, and scalability. It helps to evenly distribute the workload across multiple instances and ensures that each instance is utilized to its fullest potential.
+
+### What’s the difference between a Kafka and RabbitMQ?
+RabbitMQ and Apache Kafka allow producers to send messages to consumers. Producers are applications that publish information, while consumers are applications that subscribe to and process information.
+
+ | Kafka | RabbitMQ |
+| ------------- | ------------- |
+|RabbitMQ is a general-purpose message broker that prioritizes end-to-end message delivery.|Kafka consumers, however, are more proactive in reading and tracking information.|
+|RabbitMQ brokers allow producer software to escalate certain messages by using the priority queue.|Apache Kafka doesn't support priority queues. It treats all messages as equal when distributing them to their respective partitions. |
+|RabbitMQ sends and queues messages in a specific order. |Kafka uses topics and partitions to queue messages.|
+|A RabbitMQ broker routes the message to the destination queue. Once read, the consumer sends an acknowledgement (ACK) reply to the broker, which then deletes the message from the queue.|Apache Kafka appends the message to a log file, which remains until its retention period expires. That way, consumers can reprocess streamed data at any time within the stipulated period.|
+
+![Message Queue](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/5a350516-63c7-4c3d-b121-9ed7e2863023)
+
 ### Microservice Arhitecture
 ### SOLID Principle
