@@ -603,5 +603,5 @@ class Program
 
 #### Cache and Datsbase sync in Reddis Cache (Sliding and Absolute)
 #### How controller will validate request body (Model.IsValid)
-#### 
+#### Difference .Net Core and .Net Framework
 </details>
