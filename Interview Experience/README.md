@@ -597,3 +597,11 @@ class Program
 
 #### Mutex vs semaphore
 </details>
+
+<details>
+<summary>Deloitte</summary>
+
+#### Cache and Datsbase sync in Reddis Cache (Sliding and Absolute)
+#### How controller will validate request body (Model.IsValid)
+#### 
+</details>
