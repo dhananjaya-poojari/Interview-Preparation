@@ -46,3 +46,5 @@ RabbitMQ and Apache Kafka allow producers to send messages to consumers. Produce
 |A RabbitMQ broker routes the message to the destination queue. Once read, the consumer sends an acknowledgement (ACK) reply to the broker, which then deletes the message from the queue.|Apache Kafka appends the message to a log file, which remains until its retention period expires. That way, consumers can reprocess streamed data at any time within the stipulated period.|
 
 ![Message Queue](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/5a350516-63c7-4c3d-b121-9ed7e2863023)
+
+### What are the best practices for designing a scalable system that handles unpredictable traffic spikes?
