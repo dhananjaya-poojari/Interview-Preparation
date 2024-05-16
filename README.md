@@ -9,5 +9,5 @@
 1. [ReactJs](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/React#react-interview-preparation)    <br />
 1. [Interview Experience](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Interview%20Experience/README.md#interview-experience)
 2. [System Design](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/System%20Design/README.md#system-design)
-3. [C#](#c)
+3. [C#](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/C%23/README.md#c)
 </details>
