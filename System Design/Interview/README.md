@@ -8,6 +8,7 @@
  1. [How to Improve API Performance?](#how-to-improve-api-performance)
  2. [What’s the difference between a load balancer and an API gateway?](#whats-the-difference-between-a-load-balancer-and-an-api-gateway)
  3. [What’s the difference between a Kafka and RabbitMQ?](#whats-the-difference-between-a-kafka-and-rabbitmq)
+ 4. [What are the best practices for designing a scalable system that handles unpredictable traffic spikes?](#what-are-the-best-practices-for-designing-a-scalable-system-that-handles-unpredictable-traffic-spikes)
 </details>
 
 ### Difference between HTTP 302 Redirect and HTTP 301 Redirect
