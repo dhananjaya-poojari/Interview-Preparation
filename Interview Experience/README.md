@@ -595,7 +595,15 @@ class Program
 <details>
 <summary>Alphastream</summary>
 
-#### Mutex vs semaphore
+#### Mutex vs Semaphore
+
+| Feature      | Mutex                                                                                 | Semaphore                                                                                   |
+|--------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| **Purpose**  | Ensures that only one thread can access a resource at a time.                         | Controls access to a resource that has a limited number of instances.                       |
+| **Ownership**| Only the thread that locked the mutex can unlock it.                                  | Can be incremented or decremented by any thread, not necessarily the one that decremented it. |
+| **Usage**    | Typically used to protect critical sections of code from concurrent access.           | Often used to manage access to a pool of resources, like a fixed number of database connections. |
+| **Analogy**  | A key to a single-occupancy restroom—only one person can use it at a time, and only that person can unlock the door after use. | A ticket system for a multi-stall restroom with a limited number of stalls; anyone with a ticket can use an available stall. |
+
 </details>
 
 <details>
@@ -603,5 +611,17 @@ class Program
 
 #### Cache and Datsbase sync in Reddis Cache (Sliding and Absolute)
 #### How controller will validate request body (Model.IsValid)
-#### Difference .Net Core and .Net Framework
+#### Difference Between .NET Core and .NET Framework
+
+| Feature                | .NET Core                                                                   | .NET Framework                                                               |
+|------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| **Platform**           | Cross-platform (Windows, Linux, macOS)                                       | Windows only                                                                 |
+| **Performance**        | Generally faster and more efficient                                          | Comparatively slower                                                          |
+| **Deployment Model**   | Self-contained deployments and side-by-side versioning                       | System-wide versioning and shared framework                                  |
+| **Microservices**      | Better support for microservices and containers                              | Limited support for microservices and containers                             |
+| **API Compatibility**  | Does not support all .NET Framework APIs, focuses on modern development      | Full support for all .NET APIs                                               |
+| **Development**        | Ideal for new applications and modernizing existing applications             | Typically used for existing applications and those that rely on Windows-specific features |
+| **Release Cycle**      | Rapid release cycle with new features and improvements                       | Slower release cycle, primarily for bug fixes and security patches           |
+| **Tooling**            | Supported by Visual Studio, Visual Studio Code, and command-line tools       | Primarily supported by Visual Studio                                         |
+| **Open Source**        | Fully open-source and community-driven                                       | Partially open-source                                                        |
 </details>
