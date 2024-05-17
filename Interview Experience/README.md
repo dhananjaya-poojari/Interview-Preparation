@@ -609,8 +609,26 @@ class Program
 <details>
 <summary>Deloitte</summary>
 
-#### Cache and Datsbase sync in Reddis Cache (Sliding and Absolute)
+#### What is the best strategy to sync data between DB and redis cache?
+Caches are sync'd in two common ways:
+
+1. **Data cached with expiration:** Once cached data has expired, a background process adds fresh data to cache, and so on. Usually there's data that will be refreshed in different intervals: 10 minutes, 1 hour, every day.
+2. **Data cached on demand:** When an user requests some data, that request goes through the non-cached road, and that request stores the result in cache, and a limited number of subsequent requests will read cached data directly if cache is available. This approach can fall into #1 one too in terms of cache invalidation interval.
+
+Problem from dynamic/static perspective:
+
+1. **Real/Time approach:** each time a process changes the DB data, you dispatch an event or a message to a queue where a worker handles corresponding indexing of the cache. Some might event implement it as a DB Trigger (I don't like)
+2. **Static/delayed approach:** Once a day/hour/minute.. depending on your needs there is a process that does a batch/whole indexing of the DB data to the cache.
 #### How controller will validate request body (Model.IsValid)
+The `ModelState.IsValid` property will be true if the values were able to bind correctly to the model AND no validation rules were broken in the process.
+```
+if (!ModelState.IsValid)
+{
+  return Page();
+}
+
+```
+
 #### Difference Between .NET Core and .NET Framework
 
 | Feature                | .NET Core                                                                   | .NET Framework                                                               |
