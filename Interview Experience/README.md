@@ -584,12 +584,98 @@ class Program
 }
 ```
 #### Multicast Delegate
-#### 403 Status Code
+```
+using System;
+
+delegate void CustomCallback(string s);
+
+class TestClass
+{
+    static void Hello(string s)
+    {
+        Console.WriteLine($"  Hello, {s}!");
+    }
+
+    static void Goodbye(string s)
+    {
+        Console.WriteLine($"  Goodbye, {s}!");
+    }
+
+    static void Main()
+    {
+        CustomCallback hiDel, byeDel, multiDel, multiMinusHiDel;
+
+        // Initialize the delegate object hiDel that references the
+        hiDel = Hello;
+
+        // Initialize the delegate object byeDel that references the
+        byeDel = Goodbye;
+
+        // The two delegates, hiDel and byeDel, are combined to
+        multiDel = hiDel + byeDel;
+
+        // Remove hiDel from the multicast delegate, leaving byeDel,
+        // which calls only the method Goodbye.
+        multiMinusHiDel = multiDel - hiDel;
+
+        Console.WriteLine("Invoking delegate hiDel:");
+        hiDel("A");
+        Console.WriteLine("Invoking delegate byeDel:");
+        byeDel("B");
+        Console.WriteLine("Invoking delegate multiDel:");
+        multiDel("C");
+        Console.WriteLine("Invoking delegate multiMinusHiDel:");
+        multiMinusHiDel("D");
+    }
+}
+```
+#### Status Code
+#### 1xx: Informational
+- **100 Continue**: Indicates that the initial part of a request has been received and the client should continue with the request.
+- **101 Switching Protocols**: Informs the client that the server is switching protocols as requested by the client.
+
+#### 2xx: Success
+- **200 OK**: The request was successful, and the server returned the requested resource.
+- **201 Created**: The request was successful, and a new resource was created as a result.
+- **202 Accepted**: The request has been accepted for processing, but the processing is not complete.
+- **204 No Content**: The request was successful, but there is no content to send in the response.
+
+#### 3xx: Redirection
+- **301 Moved Permanently**: The requested resource has been moved to a new URL permanently.
+- **302 Found**: The requested resource has been temporarily moved to a different URL.
+- **304 Not Modified**: The resource has not been modified since the last request.
+
+#### 4xx: Client Errors
+- **400 Bad Request**: The server could not understand the request due to invalid syntax.
+- **401 Unauthorized**: Authentication is required and has failed or has not been provided.
+- **403 Forbidden**: The server understood the request but refuses to authorize it.
+- **404 Not Found**: The requested resource could not be found on the server.
+- **405 Method Not Allowed**: The request method is known by the server but is not supported by the target resource.
+
+#### 5xx: Server Errors
+- **500 Internal Server Error**: The server encountered an unexpected condition that prevented it from fulfilling the request.
+- **501 Not Implemented**: The server does not support the functionality required to fulfill the request.
+- **502 Bad Gateway**: The server, while acting as a gateway or proxy, received an invalid response from the upstream server.
+- **503 Service Unavailable**: The server is not ready to handle the request, often due to maintenance or overload.
+  
 #### use strict in JS file
+The "use strict" directive enables JavaScript's strict mode. JavaScript's strict mode was introduced in ECMAScript 5. It enforces stricter parsing and error handling on the code at runtime. It also helps you write cleaner code and catch errors and bugs that might otherwise go unnoticed.
 
 ### 3rd Round
 #### Normalization in SQL
+Normalization is the process of organizing data in a database. It includes creating tables and establishing relationships between those tables according to rules designed both to protect the data and to make the database more flexible by eliminating redundancy and inconsistent dependency.
+
+> https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description#normalizing-an-example-table
 #### Group by rules
+1.**HAVING Clause**:
+   - Use the `HAVING` clause to filter groups based on aggregate calculations.
+   - It is similar to the `WHERE` clause but is used for aggregate data.
+     
+2.**Column Selection**:
+   - You can only select columns that are included in the `GROUP BY` clause or aggregate functions.
+     
+3.**Order of Columns**:
+   - The order of columns in the `GROUP BY` clause matters if you're expecting a specific grouping hierarchy.
 </details>
 
 <details>
