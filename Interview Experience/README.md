@@ -729,3 +729,11 @@ if (!ModelState.IsValid)
 | **Tooling**            | Supported by Visual Studio, Visual Studio Code, and command-line tools       | Primarily supported by Visual Studio                                         |
 | **Open Source**        | Fully open-source and community-driven                                       | Partially open-source                                                        |
 </details>
+
+<details>
+<summary>First American India</summary>
+
+#### ConfigureAwait
+#### What is ‘CORS’? What is it used for?
+#### useReducer in React
+</details>
