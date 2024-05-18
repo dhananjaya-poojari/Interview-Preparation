@@ -77,7 +77,7 @@ services.AddSingleton<ILoggingService, LoggingService>();
 2. Transient <br />
 A new instance of a resource is created each time it's requested. Transient services are good for lightweight services with little or no state.
 ```
-services.AddTransient<ICronJobService,CronJobService>();
+services.AddTransient<IGuidGenerator, GuidGenerator>();
 ```
 3. Scoped <br />
 A single instance of a resource is shared within a specific scope, such as an HTTP request. Scoped services are good for maintaining state or sharing data within a single request.
