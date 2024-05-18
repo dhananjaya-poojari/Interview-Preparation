@@ -742,5 +742,6 @@ A `Worker Service` is also a real process, but is intended as a background servi
 
 Worker processes provide the execution environment for all web sites and applications configured in IIS.
 
+> https://stackoverflow.com/questions/14105345/iis-app-pools-worker-processes-app-domains
 #### Application pool
 </details>
