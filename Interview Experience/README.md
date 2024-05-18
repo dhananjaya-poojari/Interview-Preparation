@@ -736,4 +736,11 @@ if (!ModelState.IsValid)
 #### ConfigureAwait
 #### What is ‘CORS’? What is it used for?
 #### useReducer in React
+#### app.use in .Net Core
+#### Worker Process in .Net
+A `Worker Service` is also a real process, but is intended as a background service for a front-end application; it starts with the application and stops with the application.
+
+Worker processes provide the execution environment for all web sites and applications configured in IIS.
+
+#### Application pool
 </details>
