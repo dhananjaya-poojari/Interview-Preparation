@@ -777,4 +777,5 @@ An Application Pool in IIS (Internet Information Services) is a feature that iso
 Many application domains (sites) can have the same application pool, and because they have the same application pool they run under the same processes, and under the same account - and they have the same settings of the pool. If this pool restarts, then all sites under that pools restarts.
 
 #### App domain
+In a server you can have many asp.net sites that runs together. Each one site is an app domain.
 </details>
