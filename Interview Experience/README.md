@@ -220,27 +220,25 @@ Middleware components for common app scenarios:
 #### Custom middleware
 Custom middleware in ASP.NET Core allows developers to run code before or after the request-response cycle.The custom middleware component is like any other .NET class with `Invoke()` method. However, to execute next middleware in a sequence, it should have RequestDelegate type parameter in the constructor.
 ```
-using System.Globalization;
-
-namespace Middleware.Example;
-
-public class RequestCultureMiddleware
+public class CustomMiddleware
 {
     private readonly RequestDelegate _next;
 
-    public RequestCultureMiddleware(RequestDelegate next)
+    public CustomMiddleware(RequestDelegate next)
     {
         _next = next;
     }
 
-    public async Task Invoke(HttpContext context)
+    public async Task InvokeAsync(HttpContext context)
     {
-     //code dealing with the request
+        // Code to execute before the next middleware
+        Console.WriteLine("Custom Middleware: Incoming request");
 
-     await _next(context);
+        await _next(context); // Call the next middleware
 
-     //code dealing with the response
-   }
+        // Code to execute after the next middleware
+        Console.WriteLine("Custom Middleware: Outgoing response");
+    }
 }
 
 public static class RequestCultureMiddlewareExtensions
@@ -248,7 +246,7 @@ public static class RequestCultureMiddlewareExtensions
     public static IApplicationBuilder UseRequestCulture(
         this IApplicationBuilder builder)
     {
-        return builder.UseMiddleware<RequestCultureMiddleware>();
+        return builder.UseMiddleware<CustomMiddleware>();
     }
 }
 ```
@@ -733,15 +731,50 @@ if (!ModelState.IsValid)
 <details>
 <summary>First American India</summary>
 
-#### ConfigureAwait
+#### ConfigureAwait in C#
+`ConfigureAwait` is a method in C# used to configure how an `await` operation behaves in terms of capturing the current synchronization context. It is especially important in asynchronous programming to avoid potential deadlocks and improve performance.
+
+The `ConfigureAwait` method is used after an `await` expression to specify whether to continue executing the remainder of the async method on the original context captured by the `await`.
 #### What is ‘CORS’? What is it used for?
+Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers that allows or restricts web applications running at one origin (domain) from accessing resources from a different origin. This mechanism is crucial for web security and helps prevent malicious behavior such as cross-site request forgery (CSRF).
+
+When a web application makes a request to a different origin (e.g., a different domain, protocol, or port), the browser sends an HTTP request with an `Origin` header. The server can then respond with specific headers to indicate whether the request is allowed.
 #### useReducer in React
+useReducer is a React Hook that lets you add a reducer to your component.
+> https://react.dev/reference/react/useReducer#usage
 #### app.use in .Net Core
+In .NET Core, middleware components are used to handle requests and responses in the application pipeline. The `app.Use` method is one of the ways to add middleware to the request processing pipeline in an ASP.NET Core application.
+
+```
+app.Use(async (context, next) =>
+{
+  // Code to execute before the next middleware
+  Console.WriteLine("Incoming request: " + context.Request.Path);
+
+  await next.Invoke(); // Call the next middleware
+
+  // Code to execute after the next middleware
+  Console.WriteLine("Outgoing response: " + context.Response.StatusCode);
+});
+```
+Explanation
+- Anonymous Function: app.Use takes an anonymous function with two parameters: context and next.
+context: Represents the HTTP context for the request.
+- next: A delegate to invoke the next middleware in the pipeline.
+- Before Next: Code executed before calling next.Invoke() runs before the next middleware.
+- After Next: Code executed after next.Invoke() runs after the next middleware has completed processing.
 #### Worker Process in .Net
 A `Worker Service` is also a real process, but is intended as a background service for a front-end application; it starts with the application and stops with the application.
 
 Worker processes provide the execution environment for all web sites and applications configured in IIS.
 
+Now each pool can have one or more worker process. Each worker process is a different program that's run your site, have their alone static variables, they different start stop calls etc. Different worker process are not communicate together, and the only way to exchange data is from common files or a common database. If you have more than one worker process and one of them make long time calculations, then the other can take care to handle the internet calls and show content.
+
 > https://stackoverflow.com/questions/14105345/iis-app-pools-worker-processes-app-domains
 #### Application pool
+An Application Pool in IIS (Internet Information Services) is a feature that isolates web applications for better security, reliability, availability, and performance. By using application pools, you can ensure that applications run independently of each other.
+
+Many application domains (sites) can have the same application pool, and because they have the same application pool they run under the same processes, and under the same account - and they have the same settings of the pool. If this pool restarts, then all sites under that pools restarts.
+
+#### App domain
 </details>
