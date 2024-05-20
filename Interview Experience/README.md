@@ -780,4 +780,5 @@ Many application domains (sites) can have the same application pool, and because
 In a server you can have many asp.net sites that runs together. Each one site is an app domain.
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/c4519c17-0162-4cfc-8650-7aec668830a3)
 
+#### What is advantage of microservice architeture over monolithic architecture?
 </details>
