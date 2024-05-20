@@ -781,5 +781,17 @@ In a server you can have many asp.net sites that runs together. Each one site is
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/c4519c17-0162-4cfc-8650-7aec668830a3)
 
 #### What is advantage of microservice architeture over monolithic architecture?
+| **Aspect**                   | **Monolithic Architecture**                         | **Microservice Architecture**                      |
+|------------------------------|-----------------------------------------------------|---------------------------------------------------|
+| **Codebase**                 | Single codebase                                     | Multiple codebases                                 |
+| **Deployment**               | Unified deployment                                  | Independent deployment                             |
+| **Coupling**                 | Tightly coupled                                     | Loosely coupled                                    |
+| **Scalability**              | Scalability of the whole application                | Independent scaling of services                    |
+| **Technology Stack**         | Uniform technology stack                           | Flexibility to use different technologies          |
+| **Fault Isolation**          | Failure in one component can affect the entire app  | Failures are isolated to individual services       |
+| **Development Speed**        | Slower due to large codebase and dependencies       | Faster, as teams can work on different services independently |
+| **Maintenance**              | More complex due to interdependencies               | Easier due to isolated services                    |
+| **Deployment Speed**         | Slower due to the need to deploy the entire application | Faster, as services can be deployed independently   |
+| **Team Structure**           | Large, cross-functional teams                       | Small, focused teams                                |
 #### What is a database cluster? 
 </details>
