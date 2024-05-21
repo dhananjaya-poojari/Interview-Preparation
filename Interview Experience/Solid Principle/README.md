@@ -1,13 +1,9 @@
-## SOLID is an acronym that stands for:
+## SOLID Principle
 
-- Single Responsibility Principle (SRP)
-- Open/Closed Principle (OCP)
-- Liskov Substitution Principle (LSP)
-- Interface Segregation Principle (ISP)
-- Dependency Inversion Principle (DIP)
+<details>
+<summary>Single Responsibility Principle (SRP)</summary>
+<br/>
 
-
-### Single Responsibility Principle (SRP)
 Principle: A class should have only one reason to change, meaning it should have only one responsibility.
 
 Example:
@@ -36,7 +32,11 @@ public class ReportSaver
 ```
 Here, the Report class is responsible for holding the report content, ReportPrinter is responsible for printing the report, and ReportSaver is responsible for saving the report. Each class has a single responsibility.
 
-### Open/Closed Principle (OCP)
+</details>
+<details>
+<summary>Open/Closed Principle (OCP)</summary>
+<br/>
+
 Principle: Software entities should be open for extension but closed for modification.
 
 Example:
@@ -68,8 +68,12 @@ public class Rectangle : Shape
 }
 ```
 The Shape class is closed for modification but open for extension. New shapes can be added by extending the Shape class without modifying existing code.
+</details>
 
-### Liskov Substitution Principle (LSP)
+<details>
+<summary>Liskov Substitution Principle (LSP)</summary>
+<br/>
+
 Principle: Subtypes must be substitutable for their base types without altering the correctness of the program.
 
 Example:
@@ -101,7 +105,12 @@ public class Ostrich : Bird
 ```
 Here, Ostrich violates the Liskov Substitution Principle because it cannot be substituted for Bird without altering the correctness of the program. A better design would avoid using inheritance in this case or handle the inability to fly in a different way.
 
-### Interface Segregation Principle (ISP)
+</details>
+
+<details>
+<summary>Interface Segregation Principle (ISP)</summary>
+<br/>
+
 Principle: Clients should not be forced to depend upon interfaces they do not use.
 
 Example:
@@ -139,8 +148,11 @@ public class SimplePrinter : IPrinter
 }
 ```
 In this example, the IPrinter and IScanner interfaces are segregated. SimplePrinter class does not need to implement IScanner if it only supports printing.
+</details>
 
-### Dependency Inversion Principle
+<details>
+<summary>Dependency Inversion Principle</summary>
+<br/>
 
 Suppose we have a NotificationService class responsible for sending notifications to users through various channels such as email, SMS, and push notifications. Initially, the NotificationService class directly depends on concrete implementations of these notification channels:
 
@@ -250,3 +262,4 @@ In this refactored code:
 - It accepts a collection of INotificationService instances through its constructor, allowing for easier extensibility and flexibility.
   
 By applying the Dependency Inversion Principle, we've decoupled the NotificationService from specific implementations, making it more flexible, testable, and maintainable.
+</details>
