@@ -795,3 +795,12 @@ In a server you can have many asp.net sites that runs together. Each one site is
 | **Team Structure**           | Large, cross-functional teams                       | Small, focused teams                                |
 #### What is a database cluster? 
 </details>
+
+
+
+<details>
+<summary>Auto Desk</summary>
+ 
+#### What is REST Api?
+
+</details>
