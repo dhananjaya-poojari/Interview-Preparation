@@ -802,7 +802,13 @@ In a server you can have many asp.net sites that runs together. Each one site is
 <summary>Auto Desk</summary>
  
 #### What is REST Api?
-
+REST (Representational State Transfer) API is an architectural style for building web services that provide a standardized way of interacting with data and resources over the internet using HTTP protocols. A REST API is a type of web service that adheres to the principles of the REST architectural style.
+The key characteristics of a REST API are:
+- Resource-based: The API exposes a set of resources, which can be identified by unique URIs (Uniform Resource Identifiers). These resources represent the data or functionality that the API provides.
+- Stateless: Each request from the client to the server must contain all the necessary information to understand and process the request. The server does not store any client context between requests.
+- Uniform interface: The API uses a consistent set of HTTP methods (GET, POST, PUT, DELETE, etc.) to perform CRUD (Create, Read, Update, Delete) operations on the resources.
+Representation-based: The client and server exchange representations of resources, typically in formats like JSON or XML, rather than exchanging raw data.
+- Hypermedia-driven: The API should provide links and metadata within the responses, allowing clients to discover and navigate the available resources dynamically.
 </details>
 
 <details>
