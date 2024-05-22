@@ -809,6 +809,33 @@ In a server you can have many asp.net sites that runs together. Each one site is
 <summary>Hy-Vee</summary>
  
 #### What is Extension Methods?
+C# extension method is a static method of a static class, where the "this" modifier is applied to the first parameter.
+```
+public static class StringExtensions
+{
+    public static string ToTitleCase(this string str)
+    {
+        if (string.IsNullOrEmpty(str))
+            return str;
+        string[] words = str.Split(' ');
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (words[i].Length > 0)
+            {
+                words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
+            }
+        }
+        return string.Join(" ", words);
+    }
+}
+
+```
+In this example, the StringExtensions class contains a static method called `ToTitleCase` that takes a string as its parameter and returns the string in title case.
+The this keyword in the method signature `public static string ToTitleCase(this string str)` indicates that this method is an extension method for the string type.
+```
+string myString = "the quick brown fox jumps over the lazy dog";
+string titleCaseString = myString.ToTitleCase(); // "The Quick Brown Fox Jumps Over The Lazy Dog";
+```
 #### Microtask Queue and Callback Queue
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/aca0208e-4aa6-4c2f-8f40-209d4a247e23)
 
