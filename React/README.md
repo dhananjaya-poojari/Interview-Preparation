@@ -9,6 +9,7 @@
  4. [Difference between state and props](#difference-between-state-and-props)
  5. [React Context](#react-context)
  6. [Difference between useMemo and useCallback](#difference-between-usememo-and-usecallback)
+ 7. [When to prefer useReducer over useState?](#when-to-prefer-usereducer-over-usestate)
 </details>
 
 <details>
@@ -194,6 +195,28 @@ Here are some of the benefits of using React Router to build SPAs:
 SPAs can provide a more seamless and responsive user experience than traditional multi-page applications, as there is no need to load a new page for each navigation event.
 1. Reduced development time:
 React Router can help developers save time by providing a built-in routing mechanism that they can use to implement navigation in their applications.
+
+### When to prefer useReducer over useState?
+
+Managing Complex State:
+When your application state becomes complex, with multiple related pieces of data or nested objects/arrays, useReducer provides a more organized and centralized approach to handle such complexity. It's easier to manage intricate state structures with a reducer function that can handle various actions and state transitions.
+
+Global State Management:
+For applications that require global state management, where multiple components across the application need access to the same state, useReducer paired with a context API (such as useContext) can be a powerful combination. It allows you to manage global state in a more structured and predictable manner, making it easier to maintain and scale your application.
+
+Dynamic State Transitions:
+When state transitions involve complex logic or depend on various conditions, useReducer offers a more flexible and declarative way to handle such transitions. By dispatching different actions to the reducer function, you can express complex state changes more intuitively, making your code easier to understand and maintain.
+
+Undo/Redo Functionality:
+Implementing undo/redo functionality in your application can be more straightforward with useReducer. You can keep track of the state history and easily revert or replay state changes by dispatching appropriate actions to the reducer.
+
+Form State Management:
+For forms with complex validation logic or dynamic field dependencies, useReducer can be beneficial. You can manage form state, validation errors, and form submission status more effectively by encapsulating the logic within a reducer function, resulting in cleaner and more maintainable code.
+
+Optimizing Performance:
+In some cases, using useReducer can lead to better performance compared to useState, especially when dealing with deeply nested state or frequent state updates. By centralizing state management and avoiding unnecessary re-renders, you can optimize the performance of your components.
+
+Overall, useReducer shines in scenarios where state management requires more structure, flexibility, and scalability. While useState is suitable for simpler state management needs, useReducer offers a more advanced and organized approach for handling complex application state.
 
 ## Redux
 ```
