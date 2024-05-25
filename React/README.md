@@ -294,3 +294,8 @@ This hook returns a reference to the dispatch function from the Redux store. You
 > https://react-redux.js.org/api/hooks
 ### Middleware
 ### Thumb
+
+## TanStack Query
+
+> https://www.youtube.com/watch?v=dw6e__jo6-M&ab_channel=LucasBarake
+> https://tanstack.com/query/latest
