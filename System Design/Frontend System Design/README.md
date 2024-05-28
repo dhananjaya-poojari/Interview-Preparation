@@ -6,6 +6,7 @@
 
   
 1. [Communication Protocals](#communication-protocals)
+2. [REST API's](#rest-apis)
 
 </details>
 
@@ -34,3 +35,57 @@ The WebSocket API is an advanced technology that makes it possible to open a two
 ![Screenshot 2024-05-26 at 11 24 16 AM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/90804bf9-c317-4ab9-95a4-6c6612c54ef6)
 
 > https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+
+### REST API's
+![Screenshot 2024-05-28 at 6 21 58 PM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/03efaf87-961a-4eba-b6e2-1ca73fc337b0)
+
+#### PUT
+The PUT method is used to update an existing resource. If the resource does not exist, it can create a new one.
+
+#### PATCH
+The PATCH method is used to update an existing resource. It is similar to PUT, except that PATCH enables clients to update specific properties on a resource—without overwriting the others.
+
+#### OPTIONS
+The OPTIONS method is used to describe the communication options for the target resource.
+Usage: Check which HTTP methods are supported by the server
+
+#### HEAD
+The HEAD method is similar to GET but only retrieves the headers and not the body of the response.
+
+#### HTTP Request Headers
+
+This table lists common HTTP request headers, their usage, and simple examples.
+
+| Header           | Usage                                                     | Example                                |
+|------------------|-----------------------------------------------------------|----------------------------------------|
+| `Accept`         | Specifies the media types the client can handle           | `Accept: application/json`             |
+| `Authorization`  | Contains credentials for authenticating the client        | `Authorization: Bearer <token>`        |
+| `Content-Type`   | Indicates the media type of the request body              | `Content-Type: application/json`       |
+| `User-Agent`     | Identifies the client software making the request         | `User-Agent: Mozilla/5.0`              |
+| `Referer`        | Provides the URL of the resource from which the request came | `Referer: https://example.com`       |
+| `Host`           | Specifies the host and port number of the server          | `Host: www.example.com`                |
+| `Cache-Control`  | Directs caching mechanisms to follow specific rules       | `Cache-Control: no-cache`              |
+| `Cookie`         | Sends stored HTTP cookies to the server                   | `Cookie: sessionId=abc123`             |
+| `If-Modified-Since` | Makes the request conditional based on the modification date | `If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT` |
+| `Accept-Encoding` | Lists acceptable encodings for the response               | `Accept-Encoding: gzip, deflate`       |
+
+#### HTTP Response Headers
+
+This table lists common HTTP response headers, their usage, and simple examples.
+
+| Header               | Usage                                                     | Example                                |
+|----------------------|-----------------------------------------------------------|----------------------------------------|
+| `Content-Type`       | Indicates the media type of the response body             | `Content-Type: application/json`       |
+| `Content-Length`     | Specifies the size of the response body in bytes          | `Content-Length: 348`                  |
+| `Set-Cookie`         | Sends cookies from the server to the client               | `Set-Cookie: sessionId=abc123; Path=/; HttpOnly` |
+| `Cache-Control`      | Directs caching mechanisms to follow specific rules       | `Cache-Control: no-store`              |
+| `ETag`               | Provides a unique identifier for the response version     | `ETag: "abc123"`                       |
+| `Last-Modified`      | Indicates the date and time the resource was last modified| `Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT` |
+| `Location`           | Redirects the client to a different URL                   | `Location: https://www.example.com/newpage` |
+| `Server`             | Identifies the server software that handled the request   | `Server: Apache/2.4.1 (Unix)`          |
+| `WWW-Authenticate`   | Indicates the authentication method that should be used   | `WWW-Authenticate: Basic realm="example"` |
+| `Access-Control-Allow-Origin` | Specifies which origins can access the resource     | `Access-Control-Allow-Origin: *`       |
+
+
+
+
