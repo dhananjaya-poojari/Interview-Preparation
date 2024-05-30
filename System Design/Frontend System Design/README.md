@@ -11,6 +11,7 @@
 </details>
 
 ### Communication Protocals
+
 #### HTTP
 HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
 ![Screenshot 2024-05-26 at 11 09 12 AM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/066ad65e-937e-4ced-a59c-8966504bd13a)
@@ -35,6 +36,8 @@ The WebSocket API is an advanced technology that makes it possible to open a two
 ![Screenshot 2024-05-26 at 11 24 16 AM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/90804bf9-c317-4ab9-95a4-6c6612c54ef6)
 
 > https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+
+![1717049951626](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/46020675-32f5-46bc-9af2-5e215287a0b0)
 
 ### REST API's
 ![Screenshot 2024-05-28 at 6 21 58 PM](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/03efaf87-961a-4eba-b6e2-1ca73fc337b0)
