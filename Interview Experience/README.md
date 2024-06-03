@@ -846,3 +846,10 @@ string titleCaseString = myString.ToTitleCase(); // "The Quick Brown Fox Jumps O
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/aca0208e-4aa6-4c2f-8f40-209d4a247e23)
 
 </details>
+
+<details>
+<summary>Ivanti</summary>
+
+#### Why RDS over SQL Server?
+#### What is Reflection in C#?
+</details>
