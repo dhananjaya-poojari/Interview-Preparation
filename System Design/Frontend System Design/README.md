@@ -7,6 +7,7 @@
   
 1. [Communication Protocals](#communication-protocals)
 2. [REST API's](#rest-apis)
+3. [GraphQL](#graphql)
 
 </details>
 
@@ -91,5 +92,25 @@ This table lists common HTTP response headers, their usage, and simple examples.
 | `Access-Control-Allow-Origin` | Specifies which origins can access the resource     | `Access-Control-Allow-Origin: *`       |
 
 
+### GraphQL
+
+#### Benefits of GraphQL
+- prevents over-fetching and under-fetching between the client and server.
+- it provides more flexibility and consistency in accessing data from any resource with a single query, as well as combining data from different sources.
+- GraphQL has a schema that defines the types, fields, and relations of your data, which serves as a self-documenting contract between the client and server.
+
+#### Differences between REST and GraphQL
+| Feature               | REST                                                | GraphQL                                             |
+|-----------------------|-----------------------------------------------------|-----------------------------------------------------|
+| Protocol              | Uses HTTP protocol.                                 | Can use any transport layer, but typically uses HTTP. |
+| Request Structure     | Requests are made to specific endpoints.            | Single endpoint for all requests.                   |
+| Data Fetching         | Over-fetching or under-fetching of data is common.  | Allows clients to request only the data they need.   |
+| Query Flexibility     | Fixed data shape based on endpoint.                 | Clients define the structure of the response.       |
+| Strong Typing         | Not inherently strongly typed.                      | Strongly typed with a schema.                       |
+| Caching               | Supports caching mechanisms.                        | Caching responses can be challenging due to dynamic queries. |
+| Error Handling        | Standard HTTP status codes.                         | Custom error handling with detailed error messages. |
+| Versioning            | Changes may require versioning.                     | Changes to the schema don't necessarily require versioning. |
+| Learning Curve        | Easy to understand for simple cases.                | Steeper learning curve due to GraphQL schema and query language. |
+| Implementation        | Simple to implement.                                | More complex to implement due to schema definition and resolver functions. |
 
 
