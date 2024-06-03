@@ -851,5 +851,10 @@ string titleCaseString = myString.ToTitleCase(); // "The Quick Brown Fox Jumps O
 <summary>Ivanti</summary>
 
 #### Why RDS over SQL Server?
+Amazon RDS is a fully managed service that makes it easy to set up, operate, and scale a relational database in the cloud. It supports a variety of database engines such as MySQL, MariaDB, PostgreSQL, Oracle, and Microsoft SQL Server. At the same time Microsoft SQL Server supports only it’s own database engine that can be run on-premises or in the cloud. When we want to scale we can increase storage of RDS but SQL server need to increase the EC2 storage so RDS is cost efficient.
 #### What is Reflection in C#?
+
+#### How username and password is maintained in OAuth 2.0?
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/7dac04f9-899c-41c7-8d57-8e35e487c41f)
+
 </details>
