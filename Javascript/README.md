@@ -541,6 +541,8 @@ Headless browsers are mainly used for:
 - Running automated quality assurance tests
 - Scraping websites
 
+### Throttling
+
   
 ### DOM and BOM
 The BOM (Browser Object Model) consists of the objects `navigator`, `history`, `screen`, `location` and document which are children of window.
