@@ -8,6 +8,7 @@
 1. [Communication Protocals](#communication-protocals)
 2. [REST API's](#rest-apis)
 3. [GraphQL](#graphql)
+4. [gRPC](#grpc)
 
 </details>
 
@@ -113,4 +114,35 @@ This table lists common HTTP response headers, their usage, and simple examples.
 | Learning Curve        | Easy to understand for simple cases.                | Steeper learning curve due to GraphQL schema and query language. |
 | Implementation        | Simple to implement.                                | More complex to implement due to schema definition and resolver functions. |
 
+### gRPC
+#### Comparison of REST and gRPC
+
+| Feature                            | REST                                                                 | gRPC                                                                |
+|------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------|
+| **Communication Protocol**         | Typically uses HTTP/HTTPS                                            | Uses HTTP/2 as the default transport protocol                        |
+| **Message Format**                 | Primarily uses JSON or XML for payloads                              | Uses Protocol Buffers (proto buf) for payloads                       |
+| **IDL (Interface Definition Language)** | No standard, often uses OpenAPI (Swagger) or WSDL                    | Uses Protocol Buffers (proto buf) as a standard IDL                  |
+| **Data Serialization**             | JSON, XML, or other text-based formats                               | Binary serialization with ProtoBuf                                   |
+| **Efficiency**                     | Generally less efficient due to text-based formats and multiple round trips | More efficient, thanks to binary serialization and multiplexing in HTTP/2 |
+| **Flexibility**                    | More flexible in terms of data formats and can support various data models | Strongly typed, enforcing a clear contract between client and server |
+| **RPC Styles**                     | Primarily supports synchronous request-response (HTTP methods like GET, POST) | Supports synchronous and asynchronous RPCs, including bidirectional streaming |
+| **Streaming**                      | Supports server-sent events or WebSocket for streaming, but with limitations | Native support for bidirectional streaming, server streaming         |
+| **Service Discovery**              | Often requires external tools for service discovery (e.g., Kubernetes service discovery) | Built-in support for service discovery with naming and load balancing |
+| **Security**                       | Typically relies on HTTPS for security                               | Supports transport-level security (TLS/SSL) and allows for additional authentication and authorization mechanisms |
+| **Code Generation**                | Code generation is optional and can be done with tools like Swagger Codegen | Automatic code generation for client and server, providing a consistent API contract |
+| **Compatibility**                  | Widely adopted and compatible with virtually any platform or language | Supports multiple programming languages but may require gRPC-specific libraries |
+
+#### Advantages
+- **Performance**: 10x faster
+- **Streaming**: Supports data streaming
+- **Code Generation**: Enables automatic code generation
+- **Language Agnostic**: Can be used with multiple programming languages
+- **Service Discovery**: Facilitates service discovery
+- **Security**: Provides enhanced security features
+
+#### Disadvantages
+- **Non-human readable format**: Data is not easily readable by humans
+- **Limited browser support**: Not all browsers support this technology
+- **No Edge Caching**: Edge caching is not possible due to the use of the POST method
+- **Steeper learning curve**: Requires more effort to learn and implement
 
