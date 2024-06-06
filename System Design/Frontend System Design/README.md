@@ -9,6 +9,7 @@
 2. [REST API's](#rest-apis)
 3. [GraphQL](#graphql)
 4. [gRPC](#grpc)
+5. [HTTP/2 vs HTTP/1](#http2-vs-http1)
 
 </details>
 
@@ -146,3 +147,6 @@ This table lists common HTTP response headers, their usage, and simple examples.
 - **No Edge Caching**: Edge caching is not possible due to the use of the POST method
 - **Steeper learning curve**: Requires more effort to learn and implement
 
+### HTTP/2 vs HTTP/1
+
+> https://imagekit.io/blog/http2-vs-http1-performance/
