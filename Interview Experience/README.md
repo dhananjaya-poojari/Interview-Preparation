@@ -858,3 +858,11 @@ Amazon RDS is a fully managed service that makes it easy to set up, operate, and
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/7dac04f9-899c-41c7-8d57-8e35e487c41f)
 
 </details>
+
+<details>
+<summary>h & M</summary>
+
+#### Difference between FirstOrDefault and SingleOrDefault
+#### Difference between Convert.ToString() and ToString()
+#### How to stop upgrading reference type when passing a method?
+</details>
