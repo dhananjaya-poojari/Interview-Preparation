@@ -85,7 +85,8 @@ A single instance of a resource is shared within a specific scope, such as an HT
 ```
 services.AddScoped<IAuthService,AuthService>();
 ```
- > https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/
+> https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/
+> https://mwaseemzakir.substack.com/p/ep-62-dependency-injection-explained?ref=dailydev
  #### Abstract Class
 The abstract modifier indicates that the thing being modified has a missing or incomplete implementation. 
 ```
