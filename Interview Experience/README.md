@@ -80,6 +80,7 @@ A new instance of a resource is created each time it's requested. Transient serv
 services.AddTransient<IGuidGenerator, GuidGenerator>();
 ```
 3. Scoped <br />
+Within a single request, the same instance will be used wherever it is injected. However, once the request ends, those instances will be disposed of.
 A single instance of a resource is shared within a specific scope, such as an HTTP request. Scoped services are good for maintaining state or sharing data within a single request.
 ```
 services.AddScoped<IAuthService,AuthService>();
