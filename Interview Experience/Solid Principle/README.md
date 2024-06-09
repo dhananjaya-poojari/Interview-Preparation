@@ -1,5 +1,5 @@
 ## SOLID Principle
-
+> https://dev.to/kevin-uehara/solid-the-simple-way-to-understand-47im?ref=dailydev
 <details>
 <summary>Single Responsibility Principle (SRP)</summary>
 <br/>
