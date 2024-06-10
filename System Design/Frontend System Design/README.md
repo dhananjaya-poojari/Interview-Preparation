@@ -4,12 +4,17 @@
 <details>
 <summary>Networking</summary>
 
-  
 1. [Communication Protocals](#communication-protocals)
 2. [REST API's](#rest-apis)
 3. [GraphQL](#graphql)
 4. [gRPC](#grpc)
 5. [HTTP/2 vs HTTP/1](#http2-vs-http1)
+
+</details>
+
+<details>
+<summary>Communication</summary>
+
 
 </details>
 
@@ -150,3 +155,8 @@ This table lists common HTTP response headers, their usage, and simple examples.
 ### HTTP/2 vs HTTP/1
 
 > https://imagekit.io/blog/http2-vs-http1-performance/
+
+### WebSockets
+The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+
+> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
