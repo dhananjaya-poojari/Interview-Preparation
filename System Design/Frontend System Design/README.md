@@ -166,5 +166,5 @@ After connection to websockets <br>
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/2ef5941b-4845-4a24-aaab-2f85d037e7a2)
 `wss` is like `https` with SSL handshake. `ws` is `http` like without handshake
 
-> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+> https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API <br>
 > https://github.com/dhananjaya-poojari/Communication/blob/main/Server/Controllers/WebSocketController.cs
