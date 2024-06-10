@@ -15,7 +15,7 @@
 <details>
 <summary>Communication</summary>
 
-
+1. [WebSockets](#websockets)
 </details>
 
 ### Communication Protocals
@@ -158,5 +158,13 @@ This table lists common HTTP response headers, their usage, and simple examples.
 
 ### WebSockets
 The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+After connection to websockets <br>
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/8495df74-eaaf-41cc-a8ea-484111004277)
+<br>After Server sent message <br>
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/3af4c3b9-f432-44de-a87a-9defa146d05b)
+
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/2ef5941b-4845-4a24-aaab-2f85d037e7a2)
+`wss` is like `https` with SSL handshake. `ws` is `http` like without handshake
 
 > https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+> https://github.com/dhananjaya-poojari/Communication/blob/main/Server/Controllers/WebSocketController.cs
