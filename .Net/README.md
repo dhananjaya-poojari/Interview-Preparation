@@ -48,3 +48,4 @@ builder.Services.AddHostedService<RabbitMQQueueReciever>();
 3. The `Authorization` header must not be present.
 4. Only `Get` and `Head` we can apply response Caching
 
+> https://www.linkedin.com/posts/mwaseemzakir_csharp-dotnet-dotnetcore-activity-7011918313458950144-7baR/?utm_source=share&utm_medium=member_android
