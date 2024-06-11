@@ -18,6 +18,7 @@
 1. [WebSockets](#websockets)
 2. [Server Sent Events](#server-sent-events)
 3. [WebHooks](#webhooks)
+4. [Server-Sent Events vs Long Polling](#server-sent-events-vs-long-polling)
 </details>
 
 ### Communication Protocals
@@ -328,3 +329,15 @@ Webhooks are user-defined HTTP callbacks that are triggered by specific events i
 6. **Lack of Standardization for Authentication**:
    - SSE does not have built-in support for complex authentication and authorization mechanisms. You may need to rely on other methods (e.g., tokens in query parameters or custom headers) to handle security.
 </details>
+
+### Server-Sent Events vs Long Polling
+Similarities Both SSE and Long Polling:
+
+- enable near-real-time communication over HTTP/1.1,
+- are one way (an HTTP/1.1 limitation)
+- require a specific implementation (cannot be used with existing HTTP endpoints)
+- keep an HTTP connection open
+
+Differences
+
+While a Long Polling request will finish as soon as new information arrives, acting like a regular, long-lasting request, an SSE request stays open until the client or the server decides to finish it, and the new information is simply written to the buffer.
