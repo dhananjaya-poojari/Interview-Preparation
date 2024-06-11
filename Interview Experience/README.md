@@ -202,7 +202,7 @@ Creates a new object and then recursively populates it with copies of the origin
 
 Middleware components for common app scenarios:
 
-1. Exception/error handling
+1. **Exception/error handling** :  This middleware is responsible for catching and handling exceptions that occur during the processing of a request.
    - When the app runs in the Development environment:
       - Developer Exception Page Middleware `(UseDeveloperExceptionPage)` reports app runtime errors.
       - Database Error Page Middleware `(UseDatabaseErrorPage)` reports database runtime errors.
@@ -210,9 +210,10 @@ Middleware components for common app scenarios:
       - Exception Handler Middleware `(UseExceptionHandler)` catches exceptions thrown in the following middlewares.
       -  HTTP Strict Transport Security Protocol (HSTS) Middleware `(UseHsts)` adds the Strict-Transport-Security header.
 3. HTTPS Redirection Middleware `(UseHttpsRedirection)` redirects HTTP requests to HTTPS.
-4. Static File Middleware `(UseStaticFiles)` returns static files and short-circuits further request processing.
+4. **Static File Middleware `(UseStaticFiles)`** This middleware is responsible for serving static files, such as HTML, CSS, and JavaScript files, from the file system.
 5. Cookie Policy Middleware `(UseCookiePolicy)` conforms the app to the EU General Data Protection Regulation (GDPR) regulations.
-6. Routing Middleware `(UseRouting)` to route requests.
+6. **Routing Middleware `(UseRouting)`**: This middleware is responsible for determining which endpoint should handle a particular request based on the request's path and method.
+
 7. Authentication Middleware `(UseAuthentication)` attempts to authenticate the user before they're allowed access to secure resources.
 8. Authorization Middleware `(UseAuthorization)` authorizes a user to access secure resources.
 9. Session Middleware `(UseSession)` establishes and maintains session state. If the app uses session state, call Session Middleware after Cookie Policy Middleware and before MVC Middleware.
