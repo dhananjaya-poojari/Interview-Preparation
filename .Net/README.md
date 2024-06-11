@@ -3,7 +3,7 @@
 <details>
 <summary>Basic Concepts</summary>
 
-1. [Locking Mechanism in C#](#locking-mechanism-in-c)
+1. [Host Application and Background Service](#host-application-and-background-service)
 2. [Repository Pattern](#repository-pattern)
 </details> 
 
