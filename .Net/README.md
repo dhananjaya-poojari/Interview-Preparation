@@ -41,10 +41,10 @@ In an ASP.NET Core application, a background service can be implemented by creat
 builder.Services.AddHostedService<RabbitMQQueueReciever>();
 ```
 
-### 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐂𝐚𝐜𝐡𝐢𝐧𝐠 
-#### 𝐅𝐞𝐰 𝐜𝐨𝐧𝐬𝐭𝐫𝐚𝐢𝐧𝐭𝐬 𝐟𝐨𝐫 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐂𝐚𝐜𝐡𝐢𝐧𝐠
-1.The request must result in a server response with a `200 (OK)` status code.
+### Response Caching
+#### Few constraints for response caching
+1. The request must result in a server response with a `200 (OK)` status code.
+2. Response Caching Middleware must be placed before middleware that require caching. For more information, see ASP.NET Core Middleware.
+3. The `Authorization` header must not be present.
+4. Only `Get` and `Head` we can apply response Caching
 
-2.Response Caching Middleware must be placed before middleware that require caching. For more information, see ASP.NET Core Middleware.
-
-3.The `Authorization` header must not be present.
