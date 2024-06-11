@@ -139,19 +139,22 @@ This table lists common HTTP response headers, their usage, and simple examples.
 | **Code Generation**                | Code generation is optional and can be done with tools like Swagger Codegen | Automatic code generation for client and server, providing a consistent API contract |
 | **Compatibility**                  | Widely adopted and compatible with virtually any platform or language | Supports multiple programming languages but may require gRPC-specific libraries |
 
-#### Advantages
+<details>
+<summary>Advantages</summary>
 - **Performance**: 10x faster
 - **Streaming**: Supports data streaming
 - **Code Generation**: Enables automatic code generation
 - **Language Agnostic**: Can be used with multiple programming languages
 - **Service Discovery**: Facilitates service discovery
 - **Security**: Provides enhanced security features
-
-#### Disadvantages
+</details>
+<details>
+<summary>Disadvantages</summary>
 - **Non-human readable format**: Data is not easily readable by humans
 - **Limited browser support**: Not all browsers support this technology
 - **No Edge Caching**: Edge caching is not possible due to the use of the POST method
 - **Steeper learning curve**: Requires more effort to learn and implement
+</details>
 
 ### HTTP/2 vs HTTP/1
 
@@ -224,5 +227,52 @@ It is like http request but connection will be open.
 
 > https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
 
+</details>
 
+<details>
+<summary>Advantages</summary>
 
+1. **Simple to Implement**:
+   - SSE is easier to implement compared to WebSockets. It uses standard HTTP, which makes it straightforward to set up and manage.
+
+2. **Automatic Reconnection**:
+   - The browser's EventSource API automatically handles reconnections and includes built-in support for connection error handling and automatic reconnection with backoff.
+
+3. **Lightweight Protocol**:
+   - SSE is a lightweight protocol with minimal overhead, making it efficient for sending updates to clients.
+
+4. **Text-Based Protocol**:
+   - SSE uses simple text-based protocol over HTTP. This makes it easy to debug and integrate with other systems and tools that understand HTTP.
+
+5. **Browser Support**:
+   - SSE is widely supported by modern browsers, making it a reliable choice for many web applications without requiring additional libraries or plugins.
+
+6. **One-Way Communication**:
+   - Ideal for applications that require one-way communication from server to client, such as live feeds, notifications, or real-time updates.
+
+7. **Built-In Heartbeats**:
+   - The SSE protocol includes built-in heartbeat messages to keep the connection alive, ensuring consistent delivery of updates.
+
+</details>
+
+<details>
+<summary>Challenges</summary>
+
+1. **One-Way Communication**:
+   - SSE only supports one-way communication from server to client. For bidirectional communication, you need to combine SSE with another technology like WebSockets or AJAX.
+
+2. **Scalability**:
+   - Maintaining many open SSE connections can be challenging and may require specialized server infrastructure to handle a large number of clients.
+
+3. **Limited Browser Support**:
+   - While most modern browsers support SSE, some older browsers and Internet Explorer do not, which may limit its use in applications requiring broad compatibility.
+
+4. **No Binary Data**:
+   - SSE is designed to handle text data only. If you need to send binary data, you'll need to encode it in base64, which adds overhead.
+
+5. **Server Resource Consumption**:
+   - Like other long-lived connections, SSE can consume significant server resources, especially when dealing with a high number of concurrent connections.
+
+6. **Lack of Standardization for Authentication**:
+   - SSE does not have built-in support for complex authentication and authorization mechanisms. You may need to rely on other methods (e.g., tokens in query parameters or custom headers) to handle security.
+</details>
