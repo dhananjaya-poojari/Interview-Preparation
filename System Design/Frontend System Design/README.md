@@ -16,6 +16,7 @@
 <summary>Communication</summary>
 
 1. [WebSockets](#websockets)
+2. [Server Sent Events](#server-sent-events)
 </details>
 
 ### Communication Protocals
@@ -163,7 +164,7 @@ After connection to websockets <br>
 <br>After Server sent message <br>
 ![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/3af4c3b9-f432-44de-a87a-9defa146d05b)
 
-![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/2ef5941b-4845-4a24-aaab-2f85d037e7a2)
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/2ef5941b-4845-4a24-aaab-2f85d037e7a2)<br>
 `wss` is like `https` with SSL handshake. `ws` is `http` like without handshake
 
 > https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API <br>
@@ -213,3 +214,15 @@ After connection to websockets <br>
 6. **Connection Stability**:
    - Persistent connections can be susceptible to interruptions and may require robust error handling and reconnection logic to maintain stability.
 </details>
+
+### Server Sent Events
+Developing a web application that uses server-sent events is straightforward. You'll need a bit of code on the server to stream events to the front-end, but the client side code works almost identically to websockets in part of handling incoming events. This is a one-way connection, so you can't send events from a client to a server.
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/5cd5b61d-e51f-4c40-9607-133e796a074e)
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/c95c360e-b4d2-4e98-bdf8-5c4f8d035408)
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/94a46adc-21a7-4d2d-84eb-740a1315c74c) <br>
+It is like http request but connection will be open.
+
+> https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+
+
+
