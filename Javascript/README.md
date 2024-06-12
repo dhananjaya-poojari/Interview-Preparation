@@ -1,4 +1,4 @@
-![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/218e4051-9ff3-4f2b-aec4-0d5d5adaa8f2)# Javascript Interview Preparation
+# Javascript Interview Preparation
 
 ### Table of Contents
 <details>
