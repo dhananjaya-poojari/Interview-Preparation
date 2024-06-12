@@ -866,6 +866,24 @@ Amazon RDS is a fully managed service that makes it easy to set up, operate, and
 <summary>h & M</summary>
 
 #### Difference between FirstOrDefault and SingleOrDefault
+FirstOrDefault: Returns the first element of a sequence, or a default value if no element is found. <br/>
+SingleOrDefault: Returns the only element of a sequence, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.
+
 #### Difference between Convert.ToString() and ToString()
+`Convert.ToString()` handles null, while `ToString()` doesn't, and throws a NULL Reference exception.
+```
+object obj = null;
+string result = Convert.ToString(obj); // result will be ""
+
+object obj = null;
+string result = obj.ToString(); // Throws NullReferenceException
+```
 #### How to stop upgrading reference type when passing a method?
+1. Pass a clone of the object.
+2. Use immutable objects.(record type)
+3. Use read-only collections for collections.
+```
+ReadOnlyCollection<int> readOnlyList = new ReadOnlyCollection<int>(originalList);
+```
+
 </details>
