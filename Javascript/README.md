@@ -1,4 +1,4 @@
-# Javascript Interview Preparation
+![image](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/218e4051-9ff3-4f2b-aec4-0d5d5adaa8f2)# Javascript Interview Preparation
 
 ### Table of Contents
 <details>
@@ -310,6 +310,8 @@ Ignition is a fast low-level register-based interpreter written using the backen
 > https://www.youtube.com/watch?v=p-iiEDtpy6I&t=722s&ab_channel=JSConf
 
 ### Stack and Heap
+![Stack and Heap](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/51ac5658-dfd9-427b-8c4b-1e53d2020e97)
+
 In JavaScript, memory management involves the stack and heap, with value types stored on the stack and reference types on the heap. Value types include primitives like numbers (int, double, float), characters, and string, while reference types encompass objects, arrays, and class instances.
 ```
 const func1 = () => {
