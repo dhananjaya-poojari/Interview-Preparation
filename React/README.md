@@ -1,5 +1,5 @@
 # React Interview Preparation
-
+> [27 Quick Questions You Need To Master](https://dev.to/_ndeyefatoudiop/javascript-data-types-27-quick-questions-you-need-to-master-1828?ref=dailydev)
 ### Table of Contents
 <details>
 <summary>Basic Concepts</summary>
