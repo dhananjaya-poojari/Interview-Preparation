@@ -29,6 +29,7 @@
 6. [Debouncing](#debouncing)
 8. [Two issues while using callbacks](#two-issues-while-using-callbacks)
 10. [Currying](#currying)
+11. [Iterators and generators](#iterators-and-generators)
 </details>
 
 <details>
@@ -550,3 +551,23 @@ Headless browsers are mainly used for:
 The BOM (Browser Object Model) consists of the objects `navigator`, `history`, `screen`, `location` and document which are children of window.
 
 In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page.e.g. `document` and all traversal you would do in it, `events`, etc.
+
+### Iterators and generators
+Generators differ from traditional functions. They can start and halt their execution multiple times. This allows them to yield numerous values and continue their execution later on, making them perfect for managing asynchronous operations, constructing iterators, and handling endless data streams.
+```
+function* Generator() {
+ yield 1;
+ yield 2;
+ yield 3;
+}
+
+const generator = Generator();
+generator.next() // will return 1
+generator.next() // will return 2
+```
+`next()`: This method resumes the generator, returns the next yielded value, and shows if the generator has concluded with the done property.<br>
+`return()`: This method ends the generator prematurely, as if you’ve executed a return command.
+
+**Real time usage**: social media feed that supports infinite scrolling. In other words, as users scroll to the end of a list, additional posts are fetched and appended to the feed.<br>
+> https://blog.stackademic.com/dont-be-afraid-of-javascript-generators-15c998aea652
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators
