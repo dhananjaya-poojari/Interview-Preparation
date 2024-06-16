@@ -1,6 +1,30 @@
 // 1. Implement a function that serializes a Javascript value into a JSON string.
 
 // 2. Implement a function that performs a deep copy of a value, but also handles circular references.
+function deepCopy(value) {
+  // Check if the value is an object or array, and not null
+  if (typeof value !== "object" || value === null) {
+    return value; // Return the value if it's not an object or array
+  }
+
+  // Handle arrays
+  if (Array.isArray(value)) {
+    const newArray = [];
+    for (let i = 0; i < value.length; i++) {
+      newArray[i] = deepCopy(value[i]);
+    }
+    return newArray;
+  }
+
+  // Handle objects
+  const newObject = {};
+  for (const key in value) {
+    if (value.hasOwnProperty(key)) {
+      newObject[key] = deepCopy(value[key]);
+    }
+  }
+  return newObject;
+}
 
 // 3. Implement a function that determines if two values are deep equal.
 function DeepCompare(object1, object2) {
