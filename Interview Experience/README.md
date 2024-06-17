@@ -887,3 +887,13 @@ ReadOnlyCollection<int> readOnlyList = new ReadOnlyCollection<int>(originalList)
 ```
 
 </details>
+
+<details>
+<summary>STG Partners</summary>
+
+#### What Poly in .Net?
+#### What is Parallel.ForEach?
+
+
+</details>
+
