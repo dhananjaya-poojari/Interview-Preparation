@@ -5,6 +5,7 @@
 
 1. [Host Application and Background Service](#host-application-and-background-service)
 2. [Repository Pattern](#repository-pattern)
+3. [Differences between `Thread` and `Task` in .NET](#differences-between-thread-and-task-in-net)
 </details> 
 
 ### Repository Pattern
