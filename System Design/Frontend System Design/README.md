@@ -153,6 +153,7 @@ This table lists common HTTP response headers, their usage, and simple examples.
 </details>
 <details>
 <summary>Disadvantages</summary>
+   
 - **Non-human readable format**: Data is not easily readable by humans
 - **Limited browser support**: Not all browsers support this technology
 - **No Edge Caching**: Edge caching is not possible due to the use of the POST method
