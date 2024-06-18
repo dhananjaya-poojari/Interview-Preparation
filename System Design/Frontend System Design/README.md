@@ -143,6 +143,7 @@ This table lists common HTTP response headers, their usage, and simple examples.
 
 <details>
 <summary>Advantages</summary>
+   
 - **Performance**: 10x faster
 - **Streaming**: Supports data streaming
 - **Code Generation**: Enables automatic code generation
