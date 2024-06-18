@@ -49,3 +49,42 @@ builder.Services.AddHostedService<RabbitMQQueueReciever>();
 4. Only `Get` and `Head` we can apply response Caching
 
 > https://www.linkedin.com/posts/mwaseemzakir_csharp-dotnet-dotnetcore-activity-7011918313458950144-7baR/?utm_source=share&utm_medium=member_android
+
+### Differences between `Thread` and `Task` in .NET
+
+#### Overview
+
+In .NET, both `Thread` and `Task` are used to perform operations asynchronously, but they serve different purposes and have distinct features. Below is a comparison to help understand their differences.
+
+#### Thread
+
+- **Definition**: A `Thread` represents an independent path of execution within an application.
+- **Creation and Management**: Threads are created and managed manually.
+- **Resource Usage**: Threads are relatively heavyweight, each having its own stack and memory allocation.
+- **State and Lifecycle**: Threads have complex states like `Unstarted`, `Running`, `WaitSleepJoin`, `Suspended`, `AbortRequested`, and `Stopped`.
+- **Synchronization**: Requires manual synchronization (e.g., locks, mutexes).
+- **Blocking Operations**: Threads can be blocked, put to sleep, or wait for conditions.
+
+```csharp
+Thread thread = new Thread(() => {
+    // Do some work
+});
+thread.Start();
+thread.Join();  // Waits for the thread to finish
+```
+
+#### Task
+
+- **Definition**: A `Task` represents an asynchronous operation and is a higher-level abstraction over threads.
+- **Creation and Management**: Tasks are easier to create and manage, often using the Task class and async/await keywords.
+- **Resource Usage**: Tasks are more lightweight as they use the thread pool, which reuses threads.
+- **State and Lifecycle**: Tasks have simpler lifecycle management, transitioning from `Created` to `Running` to `Completed`.
+- **Synchronization**: Simplified with async/await, reducing the need for manual synchronization.
+- **Non-blocking Operations**: Tasks naturally support non-blocking operations.
+
+```
+Task task = Task.Run(() => {
+    // Do some work
+});
+await task;  // Asynchronously waits for the task to complete
+```
