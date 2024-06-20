@@ -57,5 +57,6 @@ function App() {
 }
 
 ```
+> https://www.scaler.com/topics/react/controlled-and-uncontrolled-components-in-react/
 
 </details>
