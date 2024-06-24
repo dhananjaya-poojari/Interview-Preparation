@@ -131,9 +131,15 @@ CAP theorem states that any distributed data store can only provide two of the f
 ![Rest vs GraphQL](https://github.com/dhananjaya-poojari/Interview-preparation/assets/77887564/cf54f02b-ff99-4008-8662-44dd5ea18e33)
 
 ### No-SQL
-Cassandra
-MongoDb
-DynamoDb
+![image](https://github.com/dhananjaya-poojari/Interview-Preparation/assets/77887564/e866e885-9e13-4714-87f9-96827590342d)
+When normalization isn't necessary in a database, opting for a NoSQL database can be advantageous. Although this may lead to data duplication and slower updates, it results in faster read operations, eliminates the need to read from multiple tables, and avoids writing to multiple tables during inserts.
+
+**Cassandra**
+![image](https://github.com/dhananjaya-poojari/Interview-Preparation/assets/77887564/d6babbe1-36c3-4d4b-8c33-e2273ae4d4e7)
+
+**MongoDb**
+![image](https://github.com/dhananjaya-poojari/Interview-Preparation/assets/77887564/1460b452-cf7f-4fb4-abae-95beb9afe05a)
+
 
 ### Microservice Arhitecture
 ### SOLID Principle
