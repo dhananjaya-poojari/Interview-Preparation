@@ -20,6 +20,7 @@
  14. [OAuth 2.0](#oauth-20)
  15. [REST vs GraphQL](#rest-vs-graphql)
  16. [No SQL](#no-sql)
+ 17. [CAP theorem](#cap-theorem)
 </details>
 
 ### Horizontal vs Vertical Scaling
@@ -119,6 +120,8 @@ WebSocket is a communication protocol that allows for two-way communication betw
  > https://blog.bytebytego.com/i/139604830/what-does-acid-mean
 
 ### CAP theorem
+![Screenshot 2024-06-25 at 7 28 06 PM](https://github.com/dhananjaya-poojari/Interview-Preparation/assets/77887564/e804cedb-6c61-4607-88df-b4a3e1502f44)
+
 CAP theorem states that any distributed data store can only provide two of the following three guarantees:
 1. Consistency - Every read receives the most recent write or an error.
 2. Availability - Every request receives a response.
