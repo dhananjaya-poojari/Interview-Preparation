@@ -130,6 +130,8 @@ This table lists common HTTP response headers, their usage, and simple examples.
 | Implementation        | Simple to implement.                                | More complex to implement due to schema definition and resolver functions. |
 
 ### gRPC
+![image](https://github.com/dhananjaya-poojari/Interview-Preparation/assets/77887564/2e2384a8-a46b-4975-ab1d-c395d41e13d1)
+
 #### Comparison of REST and gRPC
 
 | Feature                            | REST                                                                 | gRPC                                                                |
