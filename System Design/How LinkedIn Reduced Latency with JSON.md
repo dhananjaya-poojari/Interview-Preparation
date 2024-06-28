@@ -1,4 +1,5 @@
 # How LinkedIn Reduced Latency with JSON?
+> https://www.linkedin.com/blog/engineering/infrastructure/linkedin-integrates-protocol-buffers-with-rest-li-for-improved-m
 
 ## Why?
 LinkedIn has over 900 million members in 200 countries. To serve this traffic, they use a microservices architecture with thousands of backend services. These microservices combine to tens of thousands of individual API endpoints across their system.
