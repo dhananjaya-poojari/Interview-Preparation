@@ -145,5 +145,4 @@ When normalization isn't necessary in a database, opting for a NoSQL database ca
 
 
 ### Microservice Arhitecture
-### SOLID Principle
 ### Rate Limiting
