@@ -46,6 +46,8 @@ JSON represents data in a human-readable text format, which inherently requires 
     "id": 1
 }
 ```
+![image](https://github.com/user-attachments/assets/680423f5-0b43-490f-a5e9-2fef9799d342)
+
 This JSON string contains:
 
   - 1 character for the opening brace `{`
