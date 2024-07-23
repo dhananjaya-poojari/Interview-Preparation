@@ -6,6 +6,7 @@
 1. [Host Application and Background Service](#host-application-and-background-service)
 2. [Repository Pattern](#repository-pattern)
 3. [Differences between `Thread` and `Task` in .NET](#differences-between-thread-and-task-in-net)
+4. [Thread.Sleep and Thread.SpinWait](#threadsleep-and-threadspinwait)
 </details> 
 
 ### Repository Pattern
@@ -89,3 +90,22 @@ Task task = Task.Run(() => {
 });
 await task;  // Asynchronously waits for the task to complete
 ```
+
+### Thread.Sleep and Thread.SpinWait
+**Thread.Sleep**<br>
+- Purpose: Puts the thread into a sleep state for a specified amount of time.
+- Behavior:
+   - The thread is suspended and the CPU is free to perform other tasks.
+   - Causes a context switch, which means the operating system's scheduler is involved in pausing and resuming the thread.
+- Usage
+   - Use it when you need to wait for a relatively long period (milliseconds or more) and want to free up the CPU for other tasks.
+   - Examples: Polling, implementing a retry mechanism with delays, or pacing operations.
+     
+**Thread.SpinWait**
+- Purpose: Busy-waits for a specified number of iterations.
+- Behavior:
+   - The thread remains active and continuously checks a condition.
+   - Does not cause a context switch.
+- Usage
+   - Use it for very short waits where the overhead of a context switch would be too high, and you need precise control over timing.
+   - Examples: Implementing low-level spin locks or fine-grained synchronization where the wait time is expected to be extremely short.
