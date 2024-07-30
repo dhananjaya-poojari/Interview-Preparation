@@ -9,9 +9,9 @@ String interpolation in Angular allows you to embed expressions in your HTML tem
   <p>{{ user.age * 2 }}</p>
 </div>
 ```
-- {{ getUserDetails() }}: Calls a method from the component and displays the result.
-- {{ user.age > 18 ? 'Adult' : 'Minor' }}: Uses a ternary operator to display "Adult" if the user's age is greater than 18, otherwise "Minor".
-- {{ user.age * 2 }}: Performs a mathematical operation on the user's age.
+- `{{ getUserDetails() }}`: Calls a method from the component and displays the result.
+- `{{ user.age > 18 ? 'Adult' : 'Minor' }}`: Uses a ternary operator to display "Adult" if the user's age is greater than 18, otherwise "Minor".
+- `{{ user.age * 2 }}`: Performs a mathematical operation on the user's age.
   
 String interpolation in Angular is a powerful way to **dynamically update** the view based on the data in your component.
 ### Property and Event Binding
