@@ -5,10 +5,10 @@
   Table of Contents
 </summary>
  
-1. [Javascript](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/Javascript/README.md#javascript-interview-preparation)<br />
-1. [ReactJs](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/React#react-interview-preparation)    <br />
+1. [Javascript](/Javascript#javascript-interview-preparation)
+1. [ReactJs](/React#react-interview-preparation)
 1. [Interview Experience](/Interview%20Experience#interview-experience)
-2. [System Design](https://github.com/dhananjaya-poojari/Interview-preparation/blob/main/System%20Design/README.md#system-design)
-3. [dotNet](https://github.com/dhananjaya-poojari/Interview-preparation/tree/main/dotNet)
+2. [System Design](/System%20Design#system-design)
+3. [dotNet](/dotNet#net)
 4. [Angular](/Angular#angular)
 </details>
