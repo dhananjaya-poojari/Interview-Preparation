@@ -52,5 +52,17 @@ export class AppComponent {
 ```
 ### Directives
 1. Component Directives
-2. Attribute Directives
-3. Structural Directives
+     These are the most common directives and they define a new HTML element. Components are directives with a template.
+    ```
+    @Component({
+        selector: 'app-example',
+        template: '<h1>Hello, World!</h1>',
+    })
+    export class ExampleComponent {}
+    ```
+3. Attribute Directives
+       These directives change the appearance or behavior of an existing element. They do not have a template. <br >
+       Example: `ngClass`, `ngStyle`, `ngModel`.
+5. Structural Directives
+       These directives change the DOM layout by adding or removing DOM elements. They typically use the asterisk (`*`) prefix. <br >
+       Example: `ngIf`, `ngFor`, `ngSwitch`.
