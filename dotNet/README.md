@@ -109,3 +109,6 @@ await task;  // Asynchronously waits for the task to complete
 - Usage
    - Use it for very short waits where the overhead of a context switch would be too high, and you need precise control over timing.
    - Examples: Implementing low-level spin locks or fine-grained synchronization where the wait time is expected to be extremely short.
+
+### Multiple Inheritance
+1.diamond problem
